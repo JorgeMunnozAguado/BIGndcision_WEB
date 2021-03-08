@@ -19,9 +19,12 @@
 
 	<script src="http://code.highcharts.com/highcharts.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.highcharts.com/mapdata/countries/es/es-all.js"></script>
+	<script src="https://clientreporting.theinformationlab.co.uk/javascripts/api/tableau-2.min.js"></script>
+ 	<script src="scripts/requestTableauServer.js"></script>
 
 </head>
-<body>
+<body onload="initViz();">
 
 	<div id=header>
 		<div>
@@ -61,7 +64,7 @@
 			</div>
 			<p>Ignacio Salinas</p>
 		</div>
-		
+
 	</div>
 
 
@@ -129,7 +132,7 @@
 			<p>
 				The processing of time series, i.e., of data containing a relevant time organization for the problem to be solved, appears in multiple technological applications. We can find it for instance in the prediction of economic indicators, in the behavior of biomedical values, in the study of the transmission of infectious diseases such as COVID-19, or in the analysis of sign language.
 			</p>
-			
+
 			<figure class="highcharts-figure">
 				<div id="container"></div>
 				<p class="highcharts-description">
@@ -185,9 +188,35 @@
 				Resulta bastante interesante comparar la cantidad en 100Kg con el valor en euros de los intercambios realizados. Podemos apreciar como en las importaciones la cantidad de producto intercambiado sigue la tendencia alcista de años atrás (en los meses de febrero, marzo y abril), mientras que los precios también la respetan, pero se acentúa bastante más durante los meses que acabamos de mencionar.
 			</p>
 			<p>
-				En las exportaciones resulta curioso cómo este hecho no se percibe con tanta claridad y las cantidades se mantienen respecto a años anteriores tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple. Resultan curiosos los grandes cambios producidos durante los meses de verano. 
+				En las exportaciones resulta curioso cómo este hecho no se percibe con tanta claridad y las cantidades se mantienen respecto a años anteriores tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple. Resultan curiosos los grandes cambios producidos durante los meses de verano.
 			</p>
-			
+
+
+			<div class="col-md-4">
+				<h3>España</h3>
+        <div class="card card-chart">
+          <div class="card-header card-header-success">
+            <div id="spainMonthYear"></div>
+          </div>
+        </div>
+				<div class="card card-chart">
+          <div class="card-header card-header-success">
+            <div id="spainYear"></div>
+          </div>
+        </div>
+				<h3>Países</h3>
+				<div class="card card-chart">
+          <div class="card-header card-header-success">
+            <div id="countriesMonthYear"></div>
+          </div>
+        </div>
+				<div class="card card-chart">
+          <div class="card-header card-header-success">
+            <div id="countriesYear"></div>
+          </div>
+        </div>
+      </div>
+
 
 		</div>
 
@@ -200,7 +229,7 @@
 			<h2>Análisis en conjunto</h2>
 		</div>
 
-		
+
 
 		<div class=text>
 			<p>
@@ -259,14 +288,14 @@
 		</div>
 
 		<div id=people>
-	
+
 			<div class=person>
 				<div style="background-image: url(people/miguel.jpeg);" class="circle">
 				</div>
 				<p>Miguel Salinas</p>
 				<p>Gerente de AgroMotril</p>
 			</div>
-			
+
 		</div>
 
 	</div>
