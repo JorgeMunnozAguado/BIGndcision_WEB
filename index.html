@@ -16,6 +16,10 @@
 	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
 	<!-- <script src="https://code.highcharts.com/maps/modules/exporting.js"></script> -->
 	<script src="https://code.highcharts.com/mapdata/countries/es/es-all.js"></script>
+
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -121,7 +125,7 @@
 			</p>
 
 			<!-- Dataset 1 -->
-			<h3>Dataset 1: consumo alimentario mensual en España</h3>
+			<h3>Consumo alimentario mensual en España</h3>
 			<p>
 				The processing of time series, i.e., of data containing a relevant time organization for the problem to be solved, appears in multiple technological applications. We can find it for instance in the prediction of economic indicators, in the behavior of biomedical values, in the study of the transmission of infectious diseases such as COVID-19, or in the analysis of sign language.
 			</p>
@@ -155,19 +159,35 @@
 			<!-- Dataset 3 -->
 
 			<!-- Dataset 4 -->
-			<h3>Dataset 4: comercio exterior de España con países europeos</h3>
+			<h3>Comercio exterior de España con países europeos</h3>
 			<p>
-				Aquí voy a hacer una pequeña explicación previa muy interesante y de la que probablemente en un futuro me sienta muy orgulloso, no se que más escribir. Hasta luego.
+				El siguiente paso que decidimos dar consistió en analizar la serie histórica mensual de comercio exterior de España con el resto de países de Europa desde 2018, presentando las siguientes variables tanto para importaciones como para exportaciones por producto y origen/destino.
 			</p>
 
-			<figure class="highcharts-figure">
-				<div id="container-dataset-4"></div>
-				<p class="highcharts-description">
-				Comparación del total de las importaciones en España con todos los países en los años 
-				2018, 2019 y 2020. Se muestra la cantidad de producto en valor monetario (EUROS). 
-				</p>
-			</figure>
-			<script src="scripts/char2.js"></script>
+			<p>
+				Nos gustaría resaltar que los datos se muestran incluyen el período de pandemia por lo que no se muestran los relativos al mes de diciembre de 2020.
+			</p>
+
+			<p>
+				Veamos que ocurre con tanto las importaciones como las exportaciones totales (suma de todos los países):
+			</p>
+
+			<input class="d4-select-chart-option" name="g" type="radio" value="importaciones-chart">Importaciones</input>
+			<input class="d4-select-chart-option" name="g" type="radio" value="exportaciones-chart">Exportaciones</input>
+
+			<div id="d4-select-value-container"></div>
+			<script src="scripts/d4-select-value-chart.js"></script>
+
+			<div id="d4-select-quantity-container"></div>
+			<script src="scripts/d4-select-quantity-chart.js"></script>
+
+			<p>
+				Resulta bastante interesante comparar la cantidad en 100Kg con el valor en euros de los intercambios realizados. Podemos apreciar como en las importaciones la cantidad de producto intercambiado sigue la tendencia alcista de años atrás (en los meses de febrero, marzo y abril), mientras que los precios también la respetan, pero se acentúa bastante más durante los meses que acabamos de mencionar.
+			</p>
+			<p>
+				En las exportaciones resulta curioso cómo este hecho no se percibe con tanta claridad y las cantidades se mantienen respecto a años anteriores tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple. Resultan curiosos los grandes cambios producidos durante los meses de verano. 
+			</p>
+			
 
 		</div>
 
