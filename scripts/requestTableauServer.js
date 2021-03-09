@@ -9,7 +9,7 @@ function initViz() {
       height: "800px",
   };
   viz = new tableau.Viz(spainMonthYear, urlSpainMonthYear, options);
-  viz = new tableau.Viz(spainYear, urlSpainYear, options);
   viz = new tableau.Viz(countriesMonthYear, urlCountriesMonthYear, options);
+  viz = new tableau.Viz(spainYear, urlSpainYear, options);
   viz = new tableau.Viz(countriesYear, urlCountriesYear, options);
 }
