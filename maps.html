@@ -19,9 +19,12 @@
 
 	<script src="http://code.highcharts.com/highcharts.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.highcharts.com/mapdata/countries/es/es-all.js"></script>
+	<script src="https://clientreporting.theinformationlab.co.uk/javascripts/api/tableau-2.min.js"></script>
+ 	<script src="scripts/requestTableauServer.js"></script>
 
 </head>
-<body>
+<body onload="initViz();">
 
 	<div id=sec-2>
 
@@ -35,9 +38,36 @@
 			<h3>Consumo alimentario mensual en España</h3>
 			<p>
 				Aquí yo creo que podríamos meter todos los mapitas y cosas extras, para no petar la página principal. Otra opción es hacer varias páginas distintas.
-			</p>			
+			</p>
+			
+			<div class="col-md-4">
+				<h3>España</h3>
+				<div class="card card-chart">
+				<div class="card-header card-header-success">
+					<div id="spainMonthYear"></div>
+				</div>
+				</div>
+						<div class="card card-chart">
+				<div class="card-header card-header-success">
+					<div id="spainYear"></div>
+				</div>
+				</div>
+						<h3>Países</h3>
+						<div class="card card-chart">
+				<div class="card-header card-header-success">
+					<div id="countriesMonthYear"></div>
+				</div>
+				</div>
+						<div class="card card-chart">
+				<div class="card-header card-header-success">
+					<div id="countriesYear"></div>
+				</div>
+				</div>
+			</div>
 
 		</div>
+
+		
 
 	</div>
 
