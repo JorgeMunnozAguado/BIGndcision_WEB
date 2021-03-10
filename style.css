@@ -128,6 +128,11 @@ p::selection {
 	text-align: center;
 }
 
+.person a {
+	color: #000;
+	text-decoration: none;
+}
+
 .circle {
 	border-radius: 50%;
 	height: 150px;
