@@ -86,6 +86,7 @@ p::selection {
 	margin: 0 auto;
 	padding: 0;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 #index li {
@@ -107,6 +108,7 @@ p::selection {
 	padding: 5px 0 50px 0;
 	overflow: hidden;
 	width: fit-content;
+	width: -moz-fit-content;
 	margin: 0 auto;
 	transition: 0.1s;
 }
