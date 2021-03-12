@@ -50,6 +50,11 @@ h3 {
 	user-select: none;
 }
 
+a {
+	color: #649c99;
+    font-weight: 700;
+}
+
 p::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
 }
