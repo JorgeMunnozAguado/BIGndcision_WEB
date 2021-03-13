@@ -37,8 +37,8 @@
 		<ul>
 			<a href="#Introduccion"><li>Introducción</li></a>
 			<a href="#analisis-datasets"><li>Análisis de los datasets</li></a>
-			<a href="#analisis-en-conjunto"><li>Análisis en conjunto</li></a>
-			<a href="#un-testimonio-real"><li>Un testimonio real</li></a>
+			<!-- <a href="#analisis-en-conjunto"><li>Análisis en conjunto</li></a> -->
+			<a href="#resultados-y-conclusiones"><li>Resultados y conclusiones</li></a>
 			<a href="#conclusiones-adicionales"><li>Conclusiones adicionales</li></a>
 		</ul>
 	</div>
@@ -166,6 +166,9 @@
 				Hola probando con texto random largo:
 			</p>
 
+			<!-- Dataset 5 -->
+			<h3>Evolución de los casos de COVID-19</h3>
+
 			<!-- Dataset 1 -->
 			<h3>Consumo alimentario mensual en España</h3>
 			<p>
@@ -207,7 +210,29 @@
 			</p>
 
 			<!-- Dataset 2 -->
+
 			<!-- Dataset 3 -->
+			<h3>Precios y kilogramos comercializados semanalmente en MercaMadrid y MercaBarna</h3>
+
+			<div class="col-md-4">
+
+				<h4>España</h4>
+
+				<div class="card card-chart">
+					<div class="card-header card-header-success">
+						<div id="spainMonthYear"></div>
+					</div>
+				</div>
+
+				<h4>Otros países</h4>
+				
+				<div class="card card-chart">
+					<div class="card-header card-header-success">
+						<div id="countriesMonthYear"></div>
+					</div>
+				</div>
+				
+      		</div>
 
 			<!-- Dataset 4 -->
 			<h3>Comercio exterior de España con países europeos</h3>
@@ -241,33 +266,10 @@
 				En las exportaciones resulta curioso cómo este hecho no se percibe con tanta claridad y las cantidades se mantienen respecto a años anteriores tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple. Resultan curiosos los grandes cambios producidos durante los meses de verano.
 			</p>
 
-
-			<div class="col-md-4">
-
-				<h3>España</h3>
-
-				<div class="card card-chart">
-					<div class="card-header card-header-success">
-						<div id="spainMonthYear"></div>
-					</div>
-				</div>
-
-				<h3>Países</h3>
-				
-				<div class="card card-chart">
-					<div class="card-header card-header-success">
-						<div id="countriesMonthYear"></div>
-					</div>
-				</div>
-
-				
-      		</div>
-
-
 		</div>
-
 	</div>
 
+	<!--
 	<div id=sec-3>
 
 		<div class="header-section" style="background-image: url('background/header-3.jpg')">
@@ -300,12 +302,13 @@
 		</div>
 
 	</div>
+	-->
 
 	<div id=sec-4>
 
 		<div class="header-section" style="background-image: url('background/header-4.jpg')">
-			<div id=un-testimonio-real class=link></div>
-			<h2>Un testimonio real</h2>
+			<div id=resultados-y-conclusiones class=link></div>
+			<h2>Resultados y conclusiones</h2>
 		</div>
 		<div class=text>
 			<p>
@@ -421,6 +424,20 @@
 			<p>
 				Wow! Cómo cambia la tendencia de búsquedas durante el período de pandemia para el término ‘Recetas con aguacate’! Mientras que para el mango se mantiene! Creemos que este es un claro indicador del efecto de la pandemia en nuestros estilos de vida. El mango, la sandía, etc. son frutas que se consumen en el día a día, las cuales no son muy habituales en recetas y no requieren ninguna preparación previa para ser consumidas en nuestras ajetreadas rutinas. Pero, durante la pandemia todo esto cambió, y pasamos a tener más tiempo (no teníamos que desplazarnos, ni preparar comida para el día siguiente, etc), dando lugar a que productos que normalmente se consumían menos debido a que requieren una mayor preparación pasaran a ser más habituales en nuestras dietas. 
 			</p>
+
+			<figure class="highcharts-figure">
+				<div id="ejercicio-vs-que-hacer-vs-recetas-container"></div>
+				<p class="highcharts-description">
+				Comparación de frecuencia de búsquedas por semana de 'ejercicio en casa', 'recetas' y 'que hacer en casa' en España desde mayo de 2018 hasta la actualidad.
+				</p>
+			</figure>
+			<script src="scripts/googleTrends/ejercicio-vs-que-hacer-vs-recetas.js"></script>
+
+			<!-- Análisis Ajo -->
+			<center>
+				<div style="background-image: url(sections/ajo.png);" class="circle">
+				</div>
+			</center>
 
 	</div>
 
