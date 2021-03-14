@@ -2,13 +2,39 @@ $(function () {
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'd4-select-value-container',
-            type: 'line',
-            title: 'please select a category'
+            type: 'column'
+        },
+
+        title: {
+            text: 'Evolución del valor de las importaciones.'
         },
 
         xAxis: {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov']
-        }
+        },
+
+        yAxis: {
+            title: {
+              text: 'Valor en euros.'
+            }
+        },
+
+        series: [{
+            name: '2018',
+            color: '#7FCDBB',
+            data: [2058091940, 1879425984, 1932298320,1794039092,2009472992,1737222700,1332353680,1135186664,985898894,1124261832,1637982770]             
+        
+          }, {
+            name: '2019',
+            color: '#41B6C4',
+            data: [2036688128,1983524456,2012008856,1873577504,1874652180,1815077902,1471706400,1079702746,914945294,1178331506,1685718152]           
+        
+          }, {
+            name: '2020',
+            color: '#1D91C0',
+            data: [2242650030,2140243452,2322583838,2314740352,2122090210,1904638252,1441992146,1154250180,1059988752,1417601398,1854479382]
+        }]
+
     });
 
     $(".d4-select-chart-option").change(function() {

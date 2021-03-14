@@ -2,13 +2,38 @@ $(function () {
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'd4-select-quantity-container',
-            type: 'line',
-            title: 'please select a category'
+            type: 'column',
+        },
+
+        title: {
+            text: 'Evolución de la cantidad de importaciones.'
         },
 
         xAxis: {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov']
-        }
+        },
+
+        yAxis: {
+            title: {
+              text: 'Cantidad de producto en peso (100 KG).'
+            }
+        },
+
+        series: [{
+            name: '2018',
+            color: '#F9E1DF',
+            data: [18442704,15885473,16102876,14884110,16230572,15599005,14570120,12691929,9517391,10462188,15574249]             
+        
+          }, {
+            name: '2019',
+            color: '#D39C98',
+            data: [19100104,17025219,17435189,15986044,17286217,18478312,16567160,12214679,9853493,11595996,16168689]           
+        
+          }, {
+            name: '2020',
+            color: '#BC5957',
+            data: [19192297,17096899,18419185,16240903,15749511,16530088,14561528,11733027,9052289,11732311,16939784]            
+        }]
     });
 
     $(".d4-select-chart-option").change(function() {
