@@ -181,9 +181,17 @@ p::selection {
 	height: 50px;
 	background: #f1f1f1;
 	padding: 40px 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
+.linkCharts {
+	text-decoration: none;
+	color: #f7a08d;
+}
 
 
 
@@ -240,6 +248,8 @@ h2 {
 	box-sizing: border-box;
 	padding: 0 20px;
 }
+
+
 }
 
 
