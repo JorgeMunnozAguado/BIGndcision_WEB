@@ -46,6 +46,7 @@ Highcharts.chart('container-mango-price-per-kg', {
   },
   series: [{
     name: '2018',
+    color: '#FEDEBE',
     data: [
       218.1916607,
       190.2149441,
@@ -57,11 +58,12 @@ Highcharts.chart('container-mango-price-per-kg', {
       180.2913026,
       186.4023619,
       169.5999831,
-      174.2383002      
+      174.2383002
       ]
 
   }, {
     name: '2019',
+    color: '#FFAF42',
     data: [
       225.7307762,
       235.6649869,
@@ -73,11 +75,12 @@ Highcharts.chart('container-mango-price-per-kg', {
       203.5638979,
       174.1721427,
       181.5837992,
-      187.3403628     
+      187.3403628
       ]
 
   }, {
     name: '2020',
+    color: '#FF8303', 
     data: [
       210.8562088,
       207.320648,
@@ -89,7 +92,7 @@ Highcharts.chart('container-mango-price-per-kg', {
       202.5592631,
       205.747694,
       206.5944084,
-      205.6557804     
+      205.6557804
       ]
   }]
 });

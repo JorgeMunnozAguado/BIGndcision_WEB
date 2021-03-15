@@ -30,13 +30,13 @@ Highcharts.chart('container_covid_exp_eur', {
     title: {
       text: 'Número de casos',
       style: {
-        color: Highcharts.getOptions().colors[0]
+        color: '#f7a08d'
       }
     },
     labels: {
       format: '{value} casos',
       style: {
-        color: Highcharts.getOptions().colors[0]
+        color: '#f7a08d'
       }
     },
     opposite: true

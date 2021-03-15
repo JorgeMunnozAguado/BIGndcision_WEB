@@ -62,7 +62,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     {
       name: '2018 (Cant.)',
       type: 'column',
-      color: '#F1ED94 ',
+      color: '#EAE000',
       data: [947560,825882,984676,930451,1028532,850282,550507,385207,341195,520428,749291],
       yAxis: 1,
       tooltip: {
@@ -71,7 +71,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     }, {
       name: '2019 (Cant.)',
       type: 'column',
-      color: '#F8F043 ',
+      color: '#FFE000',
       data: [905277,821203,993649,1076632,1110317,1213653,1031842,628728,430184,709363,898610],
       yAxis: 1,
       tooltip: {
@@ -81,7 +81,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     }, {
       name: '2020 (Cant.)',
       type: 'column',
-      color: ' #EAE000',
+      color: '#FFD842',
       data: [993261,948260,1396583,1409592,1107908,873028,725001,502767,613544,775072,853904],
       yAxis: 1,
       tooltip: {

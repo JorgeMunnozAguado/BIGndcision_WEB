@@ -46,6 +46,7 @@ Highcharts.chart('container-avocado-price-per-kg', {
   },
   series: [{
     name: '2018',
+    color: '#838651',
     data: [
       294.373814,
       299.809168,
@@ -57,11 +58,12 @@ Highcharts.chart('container-avocado-price-per-kg', {
       255.396998,
       306.343845,
       280.384253,
-      257.98914      
+      257.98914
       ]
 
   }, {
     name: '2019',
+    color: '#635528',
     data: [
       274.905777,
       284.684965,
@@ -73,11 +75,12 @@ Highcharts.chart('container-avocado-price-per-kg', {
       366.356915,
       375.745899,
       347.059712,
-      323.676002      
+      323.676002
       ]
 
   }, {
     name: '2020',
+    color: '#282A15', 
     data: [
       303.101124,
       321.1889,
@@ -89,7 +92,7 @@ Highcharts.chart('container-avocado-price-per-kg', {
       247.796191,
       284.015073,
       309.227831,
-      284.323121      
+      284.323121
       ]
   }]
 });
