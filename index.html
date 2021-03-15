@@ -37,7 +37,6 @@
 		<ul>
 			<a href="#Introduccion"><li>Introducción</li></a>
 			<a href="#analisis-datasets"><li>Análisis de los datasets</li></a>
-			<!-- <a href="#analisis-en-conjunto"><li>Análisis en conjunto</li></a> -->
 			<a href="#resultados-y-conclusiones"><li>Resultados y conclusiones</li></a>
 			<a href="#conclusiones-adicionales"><li>Conclusiones adicionales</li></a>
 		</ul>
@@ -144,7 +143,7 @@
 				<img src='news/new-4.jpg'>
 				<div class=container>
 					<h1>“Yo sé cómo curar el coronavirus”</h1>
-					<p>la inverosímil receta de Alejandro Tommasi que incluye ajo, jengibre y limón.</p>
+					<p>La inverosímil receta de Alejandro Tommasi que incluye ajo, jengibre y limón.</p>
 				</div>
 				</a>
 			</div>
@@ -170,7 +169,7 @@
 			<h3>Evolución de los casos de COViD-19</h3>
 
 			<p>
-				El primer gráfico no podía ser otro que el de la curva que día tras día hemos visto en telediarios, periódicos, redes sociales, etc. y que desde un primer momento teníamos como objetivo ‘aplanar’:
+				El primer gráfico de nuestro análisis no podía ser otro que el de la curva que día tras día hemos visto en telediarios, periódicos, redes sociales, etc. y que desde un primer momento teníamos como objetivo ‘aplanar’:
 			</p>
 
 			<div id="d5-covid-container"></div>
@@ -214,16 +213,6 @@
 			</figure>
 			<script src="scripts/char1.js"></script>
 
-
-			<div class=web-page>
-				<a  target="_blank" href="https://www.abc.es/espana/madrid/abci-comprar-comprar-coronavirus-llegar-202003092217_noticia.html?ref=https%3A%2F%2Fwww.google.com%2F">
-				<img src='news/new-1.jpg'>
-				<div class=container>
-					<h1>Titulo noticia</h1>
-					<p>Texto de prueba de la noticia... In this final degree project, the study of the influence of different types of input coding, as well as data preprocessing techniques, on the efficiency in classification of multivariate time series it is proposed.</p>
-				</div>
-				</a>
-			</div>
 			<p>
 				In addition, we will bring out the relevance of multivariate time series in the field of artificial intelligence and we will discuss which are the possible applications that can be derived from this study.
 			</p>
@@ -269,44 +258,48 @@
 			<p>
 				En las exportaciones resulta curioso cómo este hecho no se percibe con tanta claridad y las cantidades se mantienen respecto a años anteriores tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple. Resultan curiosos los grandes cambios producidos durante los meses de verano.
 			</p>
+			
+			<!-- Combinación Dataset 4 y COViD -->
+			<h3>Importaciones y exportaciones Vs. COViD-19</h3>
+
+			<p>
+				Por último, quisimos ver con más detalle la evolución de la pandemia frente a las importaciones y exportaciones. Se encuentra muy relacionado con el caso anterior, pero de esta forma veremos con una claridad mucho mayor los efectos del virus:
+			</p>
+
+			<figure class="container">
+				<div id="container_covid_imp_eur"></div>
+			</figure>
+			<script src="scripts/covidImpEur.js"></script>
+
+			<figure class="container">
+				<div id="container_covid_imp_vol"></div>
+			</figure>
+			<script src="scripts/covidImpVol.js"></script>
+
+			<p>
+				En estas dos primeras gráficas se puede ver perfectamente el cambio debido a la primera ola de la pandemia: sobre todo durante marzo y abril se produce un incremento de los precios, mientras que el volumen importado no sufre modificaciones tan llamativas. Tras esto, tanto el volumen como los precios se aproximan a las tendencias de años anteriores.
+			</p>
+
+			<figure class="container">
+				<div id="container_covid_exp_eur"></div>
+			</figure>
+			<script src="scripts/covidExpEur.js"></script>
+
+			<figure class="container">
+				<div id="container_covid_exp_vol"></div>
+			</figure>
+			<script src="scripts/covidExpVol.js"></script>
+
+			<p>
+				Resulta curioso el cambio que se produce en las exportaciones, ya que ocurre todo lo contrario. Durante la primera ola apenas se aprecia cambio respecto a años anteriores mientras que en la fase de subida de la segunda (meses de julio, agosto y septiembre) se produce un aumento bastante considerable tanto del volumen como de los precios. 
+			</p>
+
+			<p>
+				¿Temor a un nuevo confinamiento? ¿Casualidad? Continuemos con el análisis e intentemos responder a estas preguntas.
+			</p>
 
 		</div>
 	</div>
-
-	<!--
-	<div id=sec-3>
-
-		<div class="header-section" style="background-image: url('background/header-3.jpg')">
-			<div id=analisis-en-conjunto class=link></div>
-			<h2>Análisis en conjunto</h2>
-		</div>
-
-
-
-		<div class=text>
-			<p>
-				Hola probando con texto random largo:
-			</p>
-			<h3>Prueba de prueba</h3>
-			<p>
-				The processing of time series, i.e., of data containing a relevant time organization for the problem to be solved, appears in multiple technological applications. We can find it for instance in the prediction of economic indicators, in the behavior of biomedical values, in the study of the transmission of infectious diseases such as COVID-19, or in the analysis of sign language.
-			</p>
-			<p>
-				In this final degree project, the study of the influence of different types of input coding, as well as data preprocessing techniques, on the efficiency in classification of multivariate time series it is proposed. All these details will be analyzed on machine learning models of neural networks such as multilayer networks, recurrent networks (RNN) or convolutional networks (CNN).
-			</p>
-			<p>
-				The study will use time series of sign language resulting from analyzing the position of the hand at different moments over time. This representative example will allow us to test different models and evaluate the results of each of them.
-			</p>
-			<p>
-				Once all the proposed techniques are studied, they will be put into practice on two data sets corresponding to sign language. The results will be analyzed in order to indicate which encodings, data processing techniques and neural network models improve the representation of the time structure, in order to obtain greater precision in the classification of multivariate time series.
-			</p>
-			<p>
-				In addition, we will bring out the relevance of multivariate time series in the field of artificial intelligence and we will discuss which are the possible applications that can be derived from this study.
-			</p>
-		</div>
-
-	</div>
-	-->
 
 	<div id=sec-4>
 
@@ -319,7 +312,7 @@
 				En nuestro equipo, BIGndcision, creemos que todo lo que hemos visto en los apartados anteriores es una parte vital del análisis ya que tanto la visualización como las conclusiones que hemos obtenido son fundamentales para comprender la situación vivida durante el año pasado.
 			</p>
 			<p>
-				Pero, creemos que siempre se puede mirar más allá y eso fue lo que hicimos en este apartado. Contactamos con departamento de contabilidad de una empresa del sector, a quienes les pedimos que nos contaran como vivieron desde dentro la pandemia y nos explicaran los cambios más significativos que percibieron durante este período. Todo lo que nos contó lo adjuntamos en la siguiente sección.
+				Pero, creemos que siempre se puede mirar más allá y eso fue lo que hicimos en este apartado. Contactamos con el departamento de contabilidad de una empresa del sector, a quienes les pedimos que nos contaran cómo vivieron desde dentro la pandemia y nos explicaran los cambios más significativos que percibieron durante este período. Todo lo que nos contó lo adjuntamos en la siguiente sección.
 			</p>
 
 			<!-- Artículo empresa del sector -->
@@ -346,11 +339,11 @@
 			</i>
 
 			<p>
-				Debido a contratos de confidencialidad no podemos dar ningún tipo de información acerca de la empresa o del autor de la misma, pero nos gustaría agradecer el tiempo dedicado a la realizacón de este artículo.
+				Debido a contratos de confidencialidad no podemos dar ningún tipo de información acerca de la empresa o del autor de la misma, pero nos gustaría agradecer el tiempo dedicado a la realización de este artículo.
 			</p>
 
 			<p>
-				La verdad es que nos resultó bastante interesante la información que podemos extraer de este artículo, ya que nos llevó a plantearnos una nueva conclusión de nuestro análisis: no es directamente la pandemia la que ha afectado a los precios, sino los cambios en la oferta o demanda de los productos derivados de la misma.
+				La verdad es que nos resultó bastante interesante la información que podemos extraer de este artículo, ya que nos llevó a plantearnos una nueva conclusión de nuestro análisis: no es directamente la pandemia la que ha afectado a los precios, sino los cambios en la oferta o demanda de los productos derivados de la misma. 
 			</p>
 
 			<p>
@@ -368,7 +361,7 @@
 			</p>
 
 			<p>
-				Se trata de un producto con el que se comercializa durante todo el año, pero las mayores cosechas se obtienen de agosto a octubre. Veamos que ocurrió con las importaciones de mangos durante el año pasado, comparándolo con años anteriores:
+				Se trata de un producto con el que se comercializa durante todo el año, pero las mayores cosechas se obtienen de agosto a octubre. Veamos qué ocurrió con las importaciones de mangos durante el año pasado, comparándolo con años anteriores:
 			</p>
 
 			<figure class="highcharts-figure">
@@ -382,7 +375,7 @@
 			<script src="scripts/mango/mango-value-imports.js"></script>
 
 			<p>
-				Resulta llamativo que durante los peores meses de la pandemia (marzo, abril y mayo) la tendencia apenas cambiara.
+				Resulta llamativo que durante los peores meses de la pandemia (marzo, abril y mayo) la tendencia apenas cambiara. Sin embargo, en la segunda ola de la pandemia sí que percibimos un aumento de precio mayor al incremento de consumo derivado de la época de grandes cosechas del mismo.
 			</p>
 
 			<!-- Análisis Aguacate -->
@@ -399,6 +392,10 @@
 				Otra fruta muy extendida por todo el mundo. Ha sufrido un gran impulso en los últimos años debido a su alto contenido en aceites vegetales lo que lo convierte en un excelente alimento en cuanto a nutrición y gastronomía se refiere. De nuevo, España es uno de los principales productores mundiales.
 			</p>
 
+			<p>
+				Veamos que ocurrió durante la pandemia con esta fruta:
+			</p>
+
 			<figure class="highcharts-figure">
 				<div id="avocado-cuantity-imports-container"></div>
 			</figure>
@@ -410,7 +407,7 @@
 			<script src="scripts/avocado/avocado-value-imports.js"></script>
 
 			<p>
-				Resulta curioso como en este caso sí que se ve modificada la tendencia de años atrás, reflejándose sobre todo en el precio. Esto último lo asociamos a la ley de la oferta y demanda. Si hay una cantidad similar a la de años atrás de un producto y se produce un mayor reclamo de ese producto, el precio subirá.
+				Es curioso como en este caso sí que se ve modificada la tendencia de años atrás, reflejándose sobre todo en el precio. Esto último lo asociamos a la ley de la oferta y demanda. Si hay una cantidad similar a la de años atrás de un producto y se produce un mayor reclamo de ese producto, el precio subirá.
 			</p>
 
 			<p>
@@ -426,16 +423,32 @@
 			<script src="scripts/googleTrends/mango-vs-avocado.js"></script>
 
 			<p>
-				Wow! Cómo cambia la tendencia de búsquedas durante el período de pandemia para el término ‘Recetas con aguacate’! Mientras que para el mango se mantiene! Creemos que este es un claro indicador del efecto de la pandemia en nuestros estilos de vida. El mango, la sandía, etc. son frutas que se consumen en el día a día, las cuales no son muy habituales en recetas y no requieren ninguna preparación previa para ser consumidas en nuestras ajetreadas rutinas. Pero, durante la pandemia todo esto cambió, y pasamos a tener más tiempo (no teníamos que desplazarnos, ni preparar comida para el día siguiente, etc), dando lugar a que productos que normalmente se consumían menos debido a que requieren una mayor preparación pasaran a ser más habituales en nuestras dietas.
+				¡Wow! ¡Cómo cambia la tendencia de búsquedas durante el período de pandemia para el término ‘Recetas con aguacate’! ¡Mientras que para el mango se mantiene! Creemos que este es un claro indicador del efecto de la pandemia en nuestros estilos de vida. El mango, la sandía, etc. son frutas que se consumen en el día a día, las cuales no son muy habituales en recetas y no requieren ninguna preparación previa para ser consumidas en nuestras ajetreadas rutinas. Pero, durante la pandemia todo esto cambió, y pasamos a tener más tiempo (no teníamos que desplazarnos, ni preparar comida para el día siguiente, etc), dando lugar a que productos que normalmente se consumían menos debido a que requieren una mayor preparación pasaran a ser más habituales en nuestras dietas.
+			</p>
+
+			<p>
+				Este cambio se refleja sobre todo en las importaciones, mientras que en las exportaciones no se aprecia tan claramente.
+			</p>
+
+			<p>
+				Viendo todo esto, parece que las modificaciones de tendencia se deben más a las variaciones en el estilo de vida de las personas debido al confinamiento domiciliario que a cualquier otra razón. Veamos de nuevo las búsquedas en google de algunos términos que creemos que pueden estar directa o indirectamente relacionados con el COVID y la cuarentena:
 			</p>
 
 			<figure class="highcharts-figure">
 				<div id="ejercicio-vs-que-hacer-vs-recetas-container"></div>
 				<p class="highcharts-description">
-				Comparación de frecuencia de búsquedas por semana de 'ejercicio en casa', 'recetas' y 'que hacer en casa' en España desde mayo de 2018 hasta la actualidad.
+				Frecuencia de búsquedas por semana de 'ejercicio en casa', 'recetas' y 'que hacer en casa' en España desde mayo de 2018 hasta la actualidad.
 				</p>
 			</figure>
 			<script src="scripts/googleTrends/ejercicio-vs-que-hacer-vs-recetas.js"></script>
+
+			<p>
+				Efectivamente, podemos apreciar una clara alteración de la tendencia durante los meses más duros, directamente relacionados con la imposibilidad de salir y la gran cantidad de tiempo libre del que disponíamos.
+			</p>
+
+			<p>
+				Por tanto, si se produjo ese incremento de búsquedas de ‘recetas’, deberíamos notarlo de algún modo en alguno de los productos más usados en la cocina española.
+			</p>
 
 			<!-- Análisis Ajo -->
 			<center>
@@ -443,11 +456,111 @@
 				</div>
 			</center>
 
+			<p>
+				¡Qué mejor producto para ver esto que el ajo! ¡La cocina española no se entiende sin él! Es mucho más que un condimento que llena de sabor nuestros platos, también posee propiedades nutritivas y múltiples beneficios para la salud. Incluso en la antigua Grecia ya se empleaba para tratar algunas enfermedades.
+			</p>
+
+			<p>
+				Veamos la variación de precios y de volumen en España de esta especie de amarilidáceas:
+			</p>
+
+			<figure class="highcharts-figure">
+				<div id="container-ajo-quantity"></div>
+			</figure>
+			<script src="scripts/ajo/ajo-quantity.js"></script>
+
+			<figure class="highcharts-figure">
+				<div id="container-ajo-value"></div>
+			</figure>
+			<script src="scripts/ajo/ajo-value.js"></script>
+
+			<p>
+				En este caso se aprecia perfectamente una gran variación sobre todo en el precio de los mismos que incluye también el mes de febrero (en el cual no habíamos comenzado a sufrir la pandemia en España, en enero también se produce incremento de precio pero va asociado a un aumento del volumen, mientras que en el segundo mes del año no). ¿Extraño verdad? Veamos cuales son los principales productores de este producto:
+			</p>
+
+			<figure class="highcharts-figure">
+				<div id="container-ajo-producers"></div>
+			</figure>
+			<script src="scripts/ajo/ajo-producers.js"></script>
+
+			<p>
+				¡Curioso! Cómo todos sabemos el primer país donde se detectaron casos de COVID-19 fue China. Como consecuencia, tuvo que ser el primer país del mundo en confinarse (Comenzó el 23 de enero de 2020 y terminó el 8 de abril - Fuente Wikipedia). Durante este período las exportaciones procedentes del país asiático se vieron reducidas a mínimos históricos, haciendo que se disparara el consumo y precio de ajos procedentes de nuestro país (tal y como se puede apreciar en la gráfica de volumen y precio anterior).
+			</p>
+
+			<p>
+				Desgraciadamente, no contamos apenas con datos de exportaciones de ajos procedentes de China, pero podemos comparar lo sucedido con otros productos, como la col china (del que China también es el mayor productor mundial):
+			</p>
+
+			<figure class="highcharts-figure">
+				<div id="container-col-china-from-china"></div>
+			</figure>
+			<script src="scripts/ajo/col-china-from-china.js"></script>
+
+			<p>
+				Se aprecia perfectamente como en los meses de enero, febrero y marzo se reducen en gran cantidad las exportaciones de este producto, casualmente los meses durante los que el país asiático estuvo confinado. 
+			</p>
+
+			<p>
+				Pero esto no pasó solamente con el ajo. Veamos qué ocurrió con otro producto que no puede faltar en ninguna despensa española.
+			</p>
+
 			<!-- Análisis Limón -->
 			<center>
 				<div style="background-image: url(sections/lemon.png);" class="square">
 				</div>
 			</center>
+
+			<p>
+				¡El limón! Un tesoro nutricional y muy beneficioso para nuestra salud: nos aporta vitaminas, elimina toxinas e incluso es un poderoso bactericida. De hecho, la OMS recomienda su consumo regular.
+			</p>
+
+			<p>
+				Además, se trata de un producto muy asociado a la repostería, ¿Quién no ha hecho nunca un bizcocho de limón en casa? ¿Recuerdan lo que ocurrió durante el confinamiento con este tipo de cocina? Refresquemos un poco la memoria:
+			</p>
+
+			<div class=web-page>
+				<a  target="_blank" href="https://www.elperiodico.com/es/sociedad/20200411/reposteria-de-confinamiento-7924172">
+				<img src='news/new-5.jpg'>
+				<div class=container>
+					<h1>Fiebre por la repostería durante el confinamiento</h1>
+					<p>La moda de hacer pasteles en casa arrasa con la harina y la levadura en los supermercados. "Cuando comes un postre casero eres más feliz", afirma Montse Comesaña</p>
+				</div>
+				</a>
+			</div>
+
+			<p>
+				Veamos qué ocurrió con algunas búsquedas relacionadas con el limón durante todo este período: 
+			</p>
+
+			<figure class="highcharts-figure">
+				<div id="container-lemon-vs-lemon-cake"></div>
+				<p class="highcharts-description">
+					Frecuencia de búsquedas por semana de 'Limón' y 'Bizcocho de Limón' en España desde mayo de 2018 hasta la actualidad.
+				</p>
+			</figure>
+			<script src="scripts/googleTrends/lemon-vs-lemon-cake.js"></script>
+
+			<p>
+				De nuevo, las tendencias de Google (lo cual podemos equiparar a lo que pensábamos cada uno en casa), revelan un cambio notable. Veamos las importaciones y exportaciones de este producto durante el año:
+			</p>			
+
+			<figure class="highcharts-figure">
+				<div id="container-lemon-exports-qv"></div>
+			</figure>
+			<script src="scripts/lemon/lemon-exports-qv.js"></script>
+
+			<figure class="highcharts-figure">
+				<div id="container-lemon-imports-qv"></div>
+			</figure>
+			<script src="scripts/lemon/lemon-imports-qv.js"></script>
+
+			<p>
+				En las importaciones podemos apreciar un cambio bastante notable, el cual se adelanta un mes al comienzo de la pandemia. Mientras que en las exportaciones percibimos cambios llamativos sobre todo en los meses de verano. Se producen unos picos muy acentuados en julio y agosto, los cuales, suelen coincidir con la mayor cantidad de exportaciones de limón, pero en este caso el cambio de tendencia tan fuerte resulta sorprendente. 
+			</p>
+
+			<p>
+				Tal y como hemos mencionado en la introducción inicial, los primeros días de pandemia se produjo un caos inicial, en el cual la incertidumbre nos invadió a todos. ¿Quién no recuerda las estanterías vacías de supermercados? Veamos lo ocurrido con las frutas y verduras congeladas.
+			</p>
 
 			<!-- Análisis Verduras congeladas-->
 			<center>
@@ -456,8 +569,39 @@
 			</center>
 
 			<p>
-				Otros de los productos en los que pudimos apreciar un cambio en las tendecias de volúmenes fueron los productos congelados. Y es que durante aquellos días de miedo y pánico en los que todo el mundo salía a comprar y dejaba las estanterías y neveras de los supermercados vacías, los productos en conserva y congelados eran los productos estrella. Esto se debe a que este tipo de productos son de larga duración (ideales para un confinamiento "indefinido").
-				Por tal motivo, es decir, por la gran demanda de este tipo de productos, los volumenes de origen subieron considerablemente durante los meses de pandemia y más notablemente durante los meses de confinamiento. Aun así si que pudimos observar una pequeña tendencia bajista en los precios.
+				Se trata de un caso muy particular en el que se aprecia perfectamente un creciente aumento en los precios de estos productos. Este hecho lo asociamos principalmente al pánico irracional ante un confinamiento, el cual, se preveía que podía ser muy largo. Mucha gente, decidió hacer grandes compras para evitar salir durante esas semanas o por miedo a que se acabaran los productos en los supermercados. Y es ahí donde irrumpen los productos congelados y en conserva: muy duraderos, asequibles y sanos (lo cual era muy importante y necesario en esos meses de confinamiento ya que nuestra actividad física se iba a ver reducida considerablemente).
+			</p>
+
+			<p>
+				Además, fueron muchas las páginas web y artículos entre los que recomiendan productos esenciales en la despensa, para la dieta… durante el confinamiento.
+			</p>
+
+			<div class=web-page>
+				<a  target="_blank" href="https://www.unicef.org/es/consejos-para-alimentacion-sencilla-asequible-saludable-durante-brote-covid19">
+				<img src='news/new-6.jpg'>
+				<div class=container>
+					<h1>Consejos para una alimentación sencilla y saludable durante el brote de COVID-19</h1>
+					<p>Muchos padres y madres están teniendo que quedarse en casa y hacer malabarismos para cuidar a sus hijos y trabajar a tiempo completo a la vez que atienden otras responsabilidades. Decidir “¿qué hay para cenar?” puede convertirse en otro reto diario.</p>
+				</div>
+				</a>
+			</div>
+
+			<div class=web-page>
+				<a  target="_blank" href="https://fcsalud.ua.es/es/alinua/documentos/covid-19/covid-19-ii.pdf">
+				<img src='news/new-7.jpg'>
+				<div class=container>
+					<h1>Recomendaciones para combatir la cuarentena del COVID-19</h1>
+					<p>Algunas consideraciones a tener en cuenta para hacer más llevadero este período (Facultad de ciencias de la Universidad de Alicante).</p>
+				</div>
+				</a>
+			</div>
+
+			<p>
+				Si echamos un vistazo rápido a los enlaces anteriores llama la atención la predominancia de productos vegetales congelados y conservados, debida a su amplia fecha de caducidad o a lo saludables que son.
+			</p>
+
+			<p>
+				Comprobemos la variación de precios de estos productos:
 			</p>
 
 			<figure class="highcharts-figure">
@@ -466,21 +610,12 @@
 			<script src="scripts/frozenVegetables.js"></script>
 
 			<p>
-				Esta tendencia, también se pudo deber a los númerosos artículos y noticias en las que se recomendaba al consumidor disponer siempre de productos vegetales congelados y en conserva en su despensa, tanto por motivos de salud, como de confinamiento indefindo.
+				Durante los meses de marzo, abril y mayo se produce una subida de los precios, mucho más acentuada en este último. Además, durante los meses de la segunda ola también se aprecia una nueva subida… ¿temor a un nuevo confinamiento? Bajo nuestro punto de vista es bastante probable.
 			</p>
 
-
-
 			<!-- Frutas y verduras cuarta gama -->
-			<center>
-				<div style="background-image: url(sections/processedFruit.png);" class="square">
-				</div>
-			</center>
-
 			<p>
-				Que sucedió con los frutas de cuarta gama:
-				Muy probablemente en la línea de lo que se ha comentado anteriormente, podemos apreciar un aumento considerable en los precios de las futas de cuarta gama. ¿Pero qué son frutas de cuarta gama? Pues bien, son todas aquellas frutas frescas, limpias, troceadas y envasadas para su consumo.
-				Y son numerosos los artículos durante la pandemia que recomienda comprar este tipo de producto para evitar contagios en los supermercados. Por tal motivo y teniendo en cuenta la ley de oferta y demanda, podemos apreciar una subida de precio considerable en este tipo de productos.
+				En la línea de lo que acabamos de comentar nos encontramos a las frutas de cuarta gama. Son todas aquellas frutas frescas, limpias, troceadas y envasadas para su consumo. Fueron numerosos los artículos que durante la pandemia recomendaron comprar este tipo de producto para evitar contagios en los supermercados.
 			</p>
 
 			<figure class="highcharts-figure">
@@ -489,38 +624,8 @@
 			<script src="scripts/processedFruit.js"></script>
 
 			<p>
-				Tal y como podemos apreciar en el anterior gráfico, el aumento es conserablemente mayor en los meses de confinamiento, es decir, cuando la gente salía con más miedo a comprar.
+				Tal y como podemos apreciar en el anterior gráfico, el aumento es considerablemente mayor en los meses de confinamiento, el cual, asociamos directamente a la ley de la oferta y la demanda.
 			</p>
-
-
-
-			<!-- Frutas y verduras cuarta gama -->
-			<center>
-				<div style="background-image: url(sections/);" class="square">
-				</div>
-			</center>
-
-
-
-			<figure class="container">
-				<div id="container_covid_imp_eur"></div>
-			</figure>
-			<script src="scripts/covidImpEur.js"></script>
-
-			<figure class="container">
-				<div id="container_covid_imp_vol"></div>
-			</figure>
-			<script src="scripts/covidImpVol.js"></script>
-
-			<figure class="container">
-				<div id="container_covid_exp_vol"></div>
-			</figure>
-			<script src="scripts/covidExpVol.js"></script>
-
-			<figure class="container">
-				<div id="container_covid_exp_eur"></div>
-			</figure>
-			<script src="scripts/covidExpEur.js"></script>
 
 
 

@@ -3,7 +3,7 @@ Highcharts.chart('container_covid_imp_vol', {
     zoomType: 'xy'
   },
   title: {
-    text: 'Volumen importaciones y número de casos'
+    text: 'Volumen importaciones Vs. Número de casos de COViD-19'
   },
   subtitle: {
     text: 'Source: WorldClimate.com'
@@ -46,7 +46,6 @@ Highcharts.chart('container_covid_imp_vol', {
   },
   legend: {
     layout: 'vertical',
-    align: 'left',
     x: 120,
     verticalAlign: 'top',
     y: 100,

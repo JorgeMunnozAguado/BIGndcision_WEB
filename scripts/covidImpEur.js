@@ -3,7 +3,7 @@ Highcharts.chart('container_covid_imp_eur', {
     zoomType: 'xy'
   },
   title: {
-    text: 'Precio importaciones y número de casos'
+    text: 'Precio importaciones Vs. Número de casos de COViD-19'
   },
   subtitle: {
     text: 'Source: WorldClimate.com'
@@ -46,7 +46,6 @@ Highcharts.chart('container_covid_imp_eur', {
   },
   legend: {
     layout: 'vertical',
-    align: 'left',
     x: 120,
     verticalAlign: 'top',
     y: 100,
