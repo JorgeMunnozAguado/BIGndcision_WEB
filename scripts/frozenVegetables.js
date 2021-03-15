@@ -3,7 +3,7 @@ Highcharts.chart('frozenVegetables-prices-container', {
     type: 'column'
   },
   title: {
-    text: 'Evolución de los precios de los volúmenes de congelados'
+    text: 'Evolución de los volúmenes de congelados'
   },
   subtitle: {
     text: 'Source: MercaBarna - MercaMadrid.'
@@ -27,7 +27,7 @@ Highcharts.chart('frozenVegetables-prices-container', {
   yAxis: {
     min: 0,
     title: {
-      text: 'Precios (Kg).'
+      text: 'Volumen (Kg).'
     }
   },
   tooltip: {

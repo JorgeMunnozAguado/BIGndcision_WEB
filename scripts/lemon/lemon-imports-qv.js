@@ -30,13 +30,13 @@ Highcharts.chart('container-lemon-imports-qv', {
     title: {
       text: 'Cantidad en Kg (100 Kg).',
       style: {
-        color: Highcharts.getOptions().colors[0]
+        color: '#D5CB01'
       }
     },
     labels: {
       format: '{value} Kg',
       style: {
-        color: Highcharts.getOptions().colors[0]
+        color: '#D5CB01'
       }
     },
     opposite: true
@@ -62,6 +62,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     {
       name: '2018 (Cant.)',
       type: 'column',
+      color: '#F1ED94 ',
       data: [947560,825882,984676,930451,1028532,850282,550507,385207,341195,520428,749291],
       yAxis: 1,
       tooltip: {
@@ -70,6 +71,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     }, {
       name: '2019 (Cant.)',
       type: 'column',
+      color: '#F8F043 ',
       data: [905277,821203,993649,1076632,1110317,1213653,1031842,628728,430184,709363,898610],
       yAxis: 1,
       tooltip: {
@@ -79,6 +81,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     }, {
       name: '2020 (Cant.)',
       type: 'column',
+      color: ' #EAE000',
       data: [993261,948260,1396583,1409592,1107908,873028,725001,502767,613544,775072,853904],
       yAxis: 1,
       tooltip: {
@@ -89,6 +92,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     {
       name: '2018 (Val.)',
       type: 'spline',
+      color: '#A0D849 ',
       data: [103375620,88165844,102362732,97869892,139238504,131842852,87267096,65450130,60551200,76597122,94449840],
       tooltip: {
         valueSuffix: ' €'
@@ -96,19 +100,21 @@ Highcharts.chart('container-lemon-imports-qv', {
     }, {
       name: '2019 (Val.)',
       type: 'spline',
+      color: '#669E0F',
       data: [93258060,80417174,91318792,97259686,112625598,126251894,107063440,67830112,54528200,90881878,107071058],
       tooltip: {
         valueSuffix: ' €'
       }
-  
+
     }, {
       name: '2020 (Val.)',
       type: 'spline',
+      color: ' #4E8001 ',
       data: [113800424,102262382,149368162,195976126,169843052,143245326,104125732,75742946,96499762,105231494,108767004],
       tooltip: {
         valueSuffix: ' €'
       }
     }
-  
+
     ]
 });

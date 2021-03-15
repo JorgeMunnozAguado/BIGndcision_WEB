@@ -30,16 +30,18 @@ Highcharts.chart('container-col-china-from-china', {
       shared: true,
       useHTML: true
     },
-    
+
     series: [  {
       name: '2018',
+      color: '#8DC13B',
       data: [19273, 42645, 58401]
     }, {
         name: '2019',
-        data: [17253, 60501, 45503]    
+        color: '#D7F08A',
+        data: [17253, 60501, 45503]
     }, {
         name: '2020',
+        color: '#E1FF5B ',
         data: [13630, 21994, 26]
     }]
   });
-  

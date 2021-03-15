@@ -176,14 +176,9 @@ p::selection {
 	text-align: justify;
 }
 
-#bottomFirst {
-	width: 100%;
-	height: 100px;
-	background: #f1f1f1;
-	align-items: center;
-}
 
-#bottomSecond {
+
+#bottom{
 	width: 100%;
 	height: 40px;
 	background: #dedede;

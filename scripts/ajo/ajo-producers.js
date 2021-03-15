@@ -13,8 +13,8 @@ Highcharts.chart('container-ajo-producers', {
     },
 
     xAxis: {
-        categories: ['China', 'India', 'Bangladesh', 'Egipto', 
-        'Corea del sur', 'Rusia', 'Myanmar', 'Ucrania', 'Uzbekistán', 
+        categories: ['China', 'India', 'Bangladesh', 'Egipto',
+        'Corea del sur', 'Rusia', 'Myanmar', 'Ucrania', 'Uzbekistán',
         'España', 'Estados Unidos', 'Argentina'],
         title: {
             text: null
@@ -59,6 +59,7 @@ Highcharts.chart('container-ajo-producers', {
 
     series: [{
         name: 'Año 2019',
+        color: '#BAB489',
         data: [21263237, 1400000, 381851, 280216, 275549, 262211, 212909, 187960, 174170, 170042, 167370, 149006]
     }]
 });
