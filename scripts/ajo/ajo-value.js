@@ -27,13 +27,13 @@ Highcharts.chart('container-ajo-value', {
   yAxis: {
     min: 0,
     title: {
-      text: 'Precios. Valor en euros.'
+      text: 'Precios. Valor en euros/Kg.'
     }
   },
   tooltip: {
     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-      '<td style="padding:0"><b>{point.y:.1f} Valor del producto en euros</b></td></tr>',
+      '<td style="padding:0"><b>{point.y:.1f} Valor del producto en euros/Kg</b></td></tr>',
     footerFormat: '</table>',
     shared: true,
     useHTML: true

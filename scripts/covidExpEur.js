@@ -3,7 +3,7 @@ Highcharts.chart('container_covid_exp_eur', {
     zoomType: 'xy'
   },
   title: {
-    text: 'Precio exportaciones Vs. Número de casos de COViD-19'
+    text: 'Valor exportaciones Vs. Número de casos de COViD-19'
   },
   subtitle: {
     text: 'Source: WorldClimate.com'
@@ -21,7 +21,7 @@ Highcharts.chart('container_covid_exp_eur', {
       }
     },
     title: {
-      text: 'Importaciones (€)',
+      text: 'Valor de las exportaciones (€)',
       style: {
         color: Highcharts.getOptions().colors[1]
       }
