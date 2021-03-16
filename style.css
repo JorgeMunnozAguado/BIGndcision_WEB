@@ -53,9 +53,10 @@ h3 {
 a {
 	color: #649c99;
     font-weight: 700;
+    text-decoration: none;
 }
 
-p::selection {
+p::selection, b::selection, i::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
 }
 

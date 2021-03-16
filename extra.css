@@ -4,18 +4,24 @@
 .web-page {
     border-radius: 3px;
     border: 1px solid #eae2e2;
-    overflow: hidden;
+
     box-shadow: 1px 4px 6px #eee;
+    position: relative;
 }
 
-.web-page img {
+.new-image {
     width: 110px;
-    float: left;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+    position: absolute;
     border-radius: 3px 0 0 3px;
 }
 
 .container {
-    float: left;
+    margin-left: 110px;
+    text-decoration: none;
     padding: 9px 15px;
     width: calc(100% - 140px);
 }
@@ -38,7 +44,6 @@
     overflow: hidden;
     color: #111;
 }
-
 
 
 

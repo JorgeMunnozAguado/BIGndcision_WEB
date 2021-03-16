@@ -100,7 +100,7 @@
 
 			<div class=web-page>
 				<a  target="_blank" href="https://www.abc.es/espana/madrid/abci-comprar-comprar-coronavirus-llegar-202003092217_noticia.html?ref=https%3A%2F%2Fwww.google.com%2F">
-				<img src='news/new-1.jpg'>
+				<div class=new-image style="background: url(news/new-1.jpg);"></div>
 				<div class=container>
 					<h1>El miedo al coronavirus deja estanterías vacías en supermercados de Madrid</h1>
 					<p>En los establecimientos de la capital no hay desabastecimiento, pero sí se percibe que algunos productos, como la carne, escasean a última hora del día.</p>
@@ -123,7 +123,7 @@
 
 			<div class=web-page>
 				<a  target="_blank" href="https://www.lavanguardia.com/vida/20200221/473680746214/agricultores-tractores-protestas-crisis.html">
-				<img src='news/new-2.jpeg'>
+				<div class=new-image style="background: url(news/new-2.jpeg);"></div>
 				<div class=container>
 					<h1>Miles de agricultores y cientos de tractores toman las calles</h1>
 					<p>Miles de agricultores y cientos de tractores han tomado las calles este viernes para protestar por la crisis que atraviesa el sector en Murcia, Tarragona, Guadalajara y Mérida (Badajoz), un “grito a la desesperada” con el que exigen al Gobierno que tome medidas concretas y con carácter urgente.</p>
@@ -137,7 +137,7 @@
 
 			<div class=web-page>
 				<a  target="_blank" href="https://www.20minutos.es/noticia/4219175/0/fiebre-harina-dispara-consumo-confinamiento-gente-mata-tiempo-cocinando-bollos/#">
-				<img src='news/new-3.jpg'>
+				<div class=new-image style="background: url(news/new-3.jpg);"></div>
 				<div class=container>
 					<h1>El consumo de harina en tiempos de coronavirus sube un 196%</h1>
 					<p>Los ciudadanos han tenido que buscar otros pasatiempos más caseros que los que hacían antes de la cuarentena.</p>
@@ -151,7 +151,7 @@
 
 			<div class=web-page>
 				<a  target="_blank" href="https://www.infobae.com/america/entretenimiento/2020/06/03/yo-se-como-curar-el-coronavirus-la-inverosimil-receta-de-alejandro-tomassi-que-incluye-ajo-jengibre-y-limon/">
-				<img src='news/new-4.jpg'>
+				<div class=new-image style="background: url(news/new-4.jpg);"></div>
 				<div class=container>
 					<h1>“Yo sé cómo curar el coronavirus”</h1>
 					<p>La inverosímil receta de Alejandro Tommasi que incluye ajo, jengibre y limón.</p>
@@ -199,34 +199,39 @@
 			</div>
 
 			<!-- Dataset 1 -->
-			<h3>Consumo alimentario mensual en España</h3>
+			<h3>Consumo y precio alimentario mensual en España</h3>
 			<p>
-				The processing of time series, i.e., of data containing a relevant time organization for the problem to be solved, appears in multiple technological applications. We can find it for instance in the prediction of economic indicators, in the behavior of biomedical values, in the study of the transmission of infectious diseases such as COVID-19, or in the analysis of sign language.
+				Para el analizar la evolución de consumo y precio mensual de los productos hemos utilizado los datasets 1 y 2. Estos ofrecían información detallada de los productos consumidos.
 			</p>
 
-			<figure class="highcharts-figure">
-				<div id="container-week-price"></div>
-				<p class="highcharts-description">
-				Chart showing data loaded dynamically. The individual data points can
-				be clicked to display more information.
-				</p>
-			</figure>
-			<script src="scripts/char3.js"></script>
+			<p>
+				El consumo es un valor determinante para demostrar si la población ha cambiado los hábitos. En la gráfica <i>“Evolución del consumo”</i> encontramos el total del consumo de frutas y verduras en el país para cada mes, durante los últimos 3 años. Como observamos, durante los pasados años se mantenía una tendencia alcista en el consumo. Fué en Marzo del 2020 cuando el consumo se disparó. Durante los meses en los que se observa una subida significativa se mantuvo el estado de alarma en España, impidiendo a los ciudadanos que salieran de sus casas.
+			</p>
+
+			<p>
+				Fué en Julio, una vez que el confinamiento cesó, cuando el consumo de frutas y verduras cayó repentinamente. Esta caída continua por el resto del año, estando también asociada con las siguientes olas de casos positivos de Coronavirus.
+			</p>
 
 			<figure class="highcharts-figure">
 				<div id="container"></div>
 				<p class="highcharts-description">
-				A basic column chart compares rainfall values between four cities.
-				Tokyo has the overall highest amount of rainfall, followed by New York.
-				The chart is making use of the axis crosshair feature, to highlight
-				months as they are hovered over.
+				Evolución del consumo total de frutas y verduras en España durante los años 2018, 2019 y 2020. Estos datos son medidos mensualmente.
 				</p>
 			</figure>
 			<script src="scripts/char1.js"></script>
 
 			<p>
-				In addition, we will bring out the relevance of multivariate time series in the field of artificial intelligence and we will discuss which are the possible applications that can be derived from this study.
+				Si nos fijamos en la evolución de los precios observamos como mayoritariamente se mantienen en una constante subida. Durante la primera mitad del 2020 no se observan aparentes variaciones en los precios. No es hasta Septiembre y Octubre que observamos un considerable aumento en el precio. Como veremos en posteriores gráficos, durante este periodo de tiempo se produce un aumento en el volumen de exportaciones de frutas y verduras.
 			</p>
+
+			<figure class="highcharts-figure">
+				<div id="container-week-price"></div>
+				<p class="highcharts-description">
+				Evolución semanal del precio de frutas y verduras, de la Junta de Andalucía. Datos de los años 2018, 2019 y 2020.
+				</p>
+			</figure>
+			<script src="scripts/char3.js"></script>
+
 
 			<!-- Dataset 2 -->
 
@@ -547,7 +552,7 @@
 
 			<div class=web-page>
 				<a  target="_blank" href="https://www.elperiodico.com/es/sociedad/20200411/reposteria-de-confinamiento-7924172">
-				<img src='news/new-5.jpg'>
+				<div class=new-image style="background: url(news/new-5.jpg);"></div>
 				<div class=container>
 					<h1>Fiebre por la repostería durante el confinamiento</h1>
 					<p>La moda de hacer pasteles en casa arrasa con la harina y la levadura en los supermercados. "Cuando comes un postre casero eres más feliz", afirma Montse Comesaña</p>
@@ -605,7 +610,7 @@
 
 			<div class=web-page>
 				<a  target="_blank" href="https://www.unicef.org/es/consejos-para-alimentacion-sencilla-asequible-saludable-durante-brote-covid19">
-				<img src='news/new-6.jpg'>
+				<div class=new-image style="background: url(news/new-6.jpg);"></div>
 				<div class=container>
 					<h1>Consejos para una alimentación sencilla y saludable durante el brote de COVID-19</h1>
 					<p>Muchos padres y madres están teniendo que quedarse en casa y hacer malabarismos para cuidar a sus hijos y trabajar a tiempo completo a la vez que atienden otras responsabilidades. Decidir “¿qué hay para cenar?” puede convertirse en otro reto diario.</p>
@@ -615,7 +620,7 @@
 			<br>
 			<div class=web-page>
 				<a  target="_blank" href="https://fcsalud.ua.es/es/alinua/documentos/covid-19/covid-19-ii.pdf">
-				<img src='news/new-7.jpg'>
+				<div class=new-image style="background: url(news/new-7.jpg);"></div>
 				<div class=container>
 					<h1>Recomendaciones para combatir la cuarentena del COVID-19</h1>
 					<p>Algunas consideraciones a tener en cuenta para hacer más llevadero este período (Facultad de ciencias de la Universidad de Alicante).</p>
@@ -647,7 +652,7 @@
 
 			<div class=web-page>
 				<a  target="_blank" href="https://saia.es/que-hacer-para-evitar-contagios-por-coronavirus-con-las-frutas-y-verduras-saia-lo-cuenta-en-rac1/">
-				<img src='news/new-8.jpg'>
+				<div class=new-image style="background: url(news/new-8.jpg);"></div>
 				<div class=container>
 					<h1>¿Qué hacer para evitar contagios por coronavirus con las frutas y verduras?: SAIA lo cuenta en ‘RAC1’</h1>
 					<p>Debido a la emergencia sanitaria por el Covid-19 no existe ninguna evidencia de que los alimentos sean una fuente o vía de transmisión del coronaviru</p>
@@ -692,7 +697,7 @@
 
 			<div class=web-page>
 				<a  target="_blank" href="https://www.abc.es/espana/madrid/abci-comprar-comprar-coronavirus-llegar-202003092217_noticia.html?ref=https%3A%2F%2Fwww.google.com%2F">
-				<img src='news/new-1.jpg'>
+				<div class=new-image style="background: url(news/new-1.jpg);"></div>
 				<div class=container>
 					<h1>Titulo noticia</h1>
 					<p>Texto de prueba de la noticia... In this final degree project, the study of the influence of different types of input coding, as well as data preprocessing techniques, on the efficiency in classification of multivariate time series it is proposed.</p>
