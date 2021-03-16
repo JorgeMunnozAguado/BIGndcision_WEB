@@ -38,11 +38,11 @@
 .container p {
     margin: 9px 0 0 0;
     text-overflow: ellipsis;
-    /*max-height: 58px;*/
     font-size: 13px;
     -webkit-line-clamp: 3;
     overflow: hidden;
     color: #111;
+    font-weight: 100;
 }
 
 

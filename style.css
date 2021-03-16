@@ -99,6 +99,7 @@ p::selection, b::selection, i::selection {
 #index li {
 	display: inline-block;
 	padding: 20px 10px;
+	font-weight: 100;
 }
 
 #index a {
