@@ -38,7 +38,7 @@
 			<a href="#Introduccion"><li>Introducción</li></a>
 			<a href="#analisis-datasets"><li>Análisis de los datasets</li></a>
 			<a href="#resultados-y-conclusiones"><li>Resultados y conclusiones</li></a>
-			<a href="#conclusiones-adicionales"><li>Conclusiones adicionales</li></a>
+			<a href="#trabajo-futuro"><li>Trabajo Futuro</li></a>
 		</ul>
 	</div>
 
@@ -81,8 +81,6 @@
 	</div>
 
 
-
-
 	<div id=sec-1>
 
 		<div class="header-section" style="background-image: url('background/header-1.jpg')">
@@ -90,8 +88,9 @@
 			<h2>Introducción</h2>
 		</div>
 		<div class=text>
+
 			<p>
-				Durante el pasado año 2020 el virus COVID-19, también conocido como Coronavirus, se propagó por todo el mundo, generando a su paso un gran caos. La OMS declaró el estado de <a href="https://es.wikipedia.org/wiki/Pandemia" target="_blank">pandemia</a> debido a las devastadores cifras de fallecidos que surgían a causa del virus. En España vivimos una época de confinamiento domiciliario, la cual afectó a nuestra forma de consumir.
+				Durante el pasado año 2020 el virus COViD-19, también conocido como Coronavirus, se propagó por todo el mundo, generando a su paso un gran caos. La OMS declaró el estado de pandemia <a href="https://es.wikipedia.org/wiki/Pandemia" target="_blank">pandemia</a> debido a las devastadores cifras de fallecidos que surgían a causa del virus. En España vivimos una época de confinamiento domiciliario, la cual afectó a nuestra forma de consumir.
 			</p>
 
 			<p>
@@ -109,7 +108,19 @@
 			</div>
 
 			<p>
-				En este trabajo queremos investigar si existió alguna relación entre los efectos producidos por el Coronavirus y el consumo de frutas y verduras en nuestro país. Para ello, en este documento presentamos una variedad de datos asociados a una explicación para desmentir o confirmar las distintas teorías que puedan surgir sobre la asociación del consumo y el COVID-19. A su vez incluimos testimonios de personas cercanas a la producción o consumo de frutas y verduras.
+				En este trabajo queremos investigar si existió alguna relación entre los efectos producidos por el Coronavirus y el consumo de frutas y verduras en nuestro país. Para ello, presentamos una variedad de datos asociados a una explicación para desmentir o confirmar las distintas teorías que puedan surgir sobre la asociación del consumo y el COVID-19. A su vez incluimos testimonios de personas cercanas a la producción o consumo de frutas y verduras.
+			</p>
+
+			<p>
+				Para la realización del análisis, nos hemos apoyado en Python, un lenguaje de programación interpretado. Las librerías Numpy o Pandas nos permiten realizar operaciones sobre los datos, dando soporte a arrays y matrices multidimensionales, además de poseer funciones matemáticas para trabajar sobre ellos. Las visualizaciones de los resultados para su posterior análisis se realizaron llevaron a cabo con matplotlib.
+			</p>
+
+			<p>
+				Finalmente, en la web, se utilizaron principalmente lenguajes HTML, CSS o Javascript, consiguiendo dar un aspecto visual atractivo para el usuario, además de interactivo. Algunas de las librerías  que se emplearon para conseguir estos objetivos fueron <a href="https://www.highcharts.com/" target="_blank">HIGHCHARTS</a> y  <a href="https://www.tableau.com/products/mobile" target="_blank">Tableau</a>.
+			</p>
+
+			<p>
+				De cara a ofrecer un análisis más detallado hemos hecho uso de diferentes datasets externos que nos proporcionan gran cantidad de información de utilidad con la que extraer nuevas conclusiones. Principalmente son dos: <a href="https://trends.google.es/trends/?geo=ES" target="_blank">Google Trends</a>, para analizar las preocupaciones de la población a lo largo del tiempo y datos del COViD a nivel de comunidad autónoma, de la página web oficial de <a href="https://datos.gob.es/es/catalogo/e05070101-evolucion-de-enfermedad-por-el-coronavirus-covid-19" target="_blank">Datos Abiertos del Gobierno de España</a>.
 			</p>
 
 			<h3>Análisis preliminar</h3>
@@ -132,7 +143,7 @@
 			</div>
 
 			<p>
-				Otro factor que pudo afectar en el consumo o precio de ciertos alimentos fueron las modas. Durante el periodo de confinamiento domiciliario la población trató de encontrar un hobbie o alguna actividad que presentara una novedad, ante la monotonía de estar entre 4 paredes. La repostería, como se explica en la noticia adjunta “La gente mata el tiempo haciendo bollow”. Esta actividad ocasionó que la harina y la levadura se agotaran en muchos establecimientos.
+				Otro factor que pudo afectar en el consumo o precio de ciertos alimentos fueron las modas. Durante el periodo de confinamiento domiciliario la población trató de encontrar un hobbie o alguna actividad que presentara una novedad, ante la monotonía de estar entre 4 paredes. La repostería, como se explica en la noticia adjunta “La gente mata el tiempo haciendo bollos”. Esta actividad ocasionó que la harina y la levadura se agotaran en muchos establecimientos.
 			</p>
 
 			<div class=web-page>
@@ -232,16 +243,21 @@
 			</figure>
 			<script src="scripts/char3.js"></script>
 
-
-			<!-- Dataset 2 -->
-
 			<!-- Dataset 3 -->
 			<h3>Precios y kilogramos comercializados semanalmente en MercaMadrid y MercaBarna</h3>
 			<p>
-				Además de los anteriores análisis de datasets eleborados, también se han realizados varios gráficos y mapas interactivos sobre los precios y volúmnes de los productos con los que el usuario podrá interactuar de forma fácil y sencilla, añadiendo o eliminando los filtros que desee.
+				Los siguientes datos se pueden encontrar clickando en el link “Gráficos y mapas”. En esta página se proporcionan diferentes gráficas con el objetivo de ver la evolución de los precios y volúmenes. 
 			</p>
+
 			<a href="maps.html" class= "linkCharts"><img src="icons/chartsIcon.png"  style="width:32px;height:32px;text-decoration: none;"> Gráficos y mapas </a>
 
+			<p>
+				En la primera de ellas, podemos apreciar la variación de precios y volúmenes por comunidades autónomas. Además de poder aplicar diferentes filtros como la elección de los meses que queremos buscar, se proporciona la posibilidad de filtrado por comunidad autónoma de origen y productos.
+			</p>
+
+			<p>
+				También se puede estudiar la evolución de los precios y volúmenes de productos en función de los años o familias de productos. De esta forma, el usuario puede investigar y jugar con los datos y gráficos de la web.
+			</p>
 
 			<!-- Dataset 4 -->
 			<h3>Comercio exterior de España con países europeos</h3>
@@ -269,17 +285,17 @@
 			<script src="scripts/d4-select-quantity-chart.js"></script>
 
 			<p>
-				Resulta bastante interesante comparar la cantidad en 100Kg con el valor en euros de los intercambios realizados. Podemos apreciar como en las importaciones la cantidad de producto intercambiado sigue la tendencia alcista de años atrás (en los meses de febrero, marzo y abril), mientras que los precios también la respetan, pero se acentúa bastante más durante los meses que acabamos de mencionar.
+				Resulta bastante interesante comparar la cantidad con el valor en euros de los intercambios realizados. Podemos apreciar como en las importaciones la cantidad de producto intercambiado sigue la tendencia alcista de años atrás (en los meses de febrero, marzo y abril), mientras que los precios también suben, pero de forma más acentuada en ese trimestre.
 			</p>
 			<p>
-				En las exportaciones resulta curioso cómo este hecho no se percibe con tanta claridad y las cantidades se mantienen respecto a años anteriores tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple. Resultan curiosos los grandes cambios producidos durante los meses de verano.
+				En las exportaciones resulta curioso cómo este hecho no se percibe con tanta claridad y el comportamiento se mantiene estable respecto a años anteriores, tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple. 
 			</p>
 
 			<!-- Combinación Dataset 4 y COViD -->
 			<h3>Importaciones y exportaciones Vs. COViD-19</h3>
 
 			<p>
-				Por último, quisimos ver con más detalle la evolución de la pandemia frente a las importaciones y exportaciones. Se encuentra muy relacionado con el caso anterior, pero de esta forma veremos con una claridad mucho mayor los efectos del virus:
+				Por último, quisimos analizar con más detalle la evolución de la pandemia frente a las importaciones y exportaciones de frutas y verduras. Se encuentra muy relacionado con el apartado anterior, pero de esta forma veremos con una claridad mucho mayor la influencia del virus: 
 			</p>
 
 			<figure class="container">
@@ -293,7 +309,7 @@
 			<script src="scripts/covidImpVol.js"></script>
 
 			<p>
-				En estas dos primeras gráficas se puede ver perfectamente el cambio debido a la primera ola de la pandemia: sobre todo durante marzo y abril se produce un incremento de los precios, mientras que el volumen importado no sufre modificaciones tan llamativas. Tras esto, tanto el volumen como los precios se aproximan a las tendencias de años anteriores.
+				En estas dos primeras gráficas se puede observar perfectamente el cambio debido a la  influencia de la primera ola de la pandemia: sobre todo durante marzo y abril se produce un incremento del valor, mientras que el volumen importado sigue el mismo comportamiento, por tanto, se deriva un incremento del precio. Tras esto, tanto el volumen como el valor en euros siguen las tendencias de años anteriores.
 			</p>
 
 			<figure class="container">
@@ -307,7 +323,7 @@
 			<script src="scripts/covidExpVol.js"></script>
 
 			<p>
-				Resulta curioso el cambio que se produce en las exportaciones, ya que ocurre todo lo contrario. Durante la primera ola apenas se aprecia cambio respecto a años anteriores mientras que en la fase de subida de la segunda (meses de julio, agosto y septiembre) se produce un aumento bastante considerable tanto del volumen como de los precios.
+				Por el contrario, las exportaciones se comportan de forma opuesta. Durante la primera ola apenas se aprecia cambio respecto a años anteriores mientras que en la fase de subida de la segunda (meses de julio, agosto y septiembre) se produce un aumento bastante considerable tanto del volumen como del coste. 
 			</p>
 
 			<p>
@@ -323,34 +339,35 @@
 			<div id=resultados-y-conclusiones class=link></div>
 			<h2>Resultados y conclusiones</h2>
 		</div>
+
 		<div class=text>
 			<p>
-				En nuestro equipo, BIGndcision, creemos que todo lo que hemos visto en los apartados anteriores es una parte vital del análisis ya que tanto la visualización como las conclusiones que hemos obtenido son fundamentales para comprender la situación vivida durante el año pasado.
+				En nuestro equipo, BIGndcision, creemos que todo lo que hemos visto en los apartados anteriores es una parte vital del análisis ya que tanto la visualización como las conclusiones obtenidas son fundamentales para comprender la situación vivida durante el año pasado.
 			</p>
 			<p>
-				Pero, creemos que siempre se puede mirar más allá y eso fue lo que hicimos en este apartado. Contactamos con el departamento de contabilidad de una empresa del sector, a quienes les pedimos que nos contaran cómo vivieron desde dentro la pandemia y nos explicaran los cambios más significativos que percibieron durante este período. Todo lo que nos contó lo adjuntamos en la siguiente sección.
+				Pero, estamos convencidos que siempre se puede mirar más allá y eso fue lo que hicimos en este apartado. Contactamos con el departamento de contabilidad de una empresa del sector, a quienes les pedimos que nos contaran cómo vivieron desde dentro la pandemia y nos explicaran los cambios más significativos que percibieron durante este período. En la siguiente sección, su testimonio:
 			</p>
 
 			<!-- Artículo empresa del sector -->
 			<h3>Una empresa del sector y el COVID-19</h3>
 			<i>
 				<p>
-					Nuestra empresa se dedica a la manipulación, clasificación, envasado y comercialización de productos hortofrutícolas destinados tanto al mercado nacional como al mercado internacional  (fundamentalmente europeo) en una proporción de 1 a 4. En menor medida también interviene en la producción directa de hortalizas y subtropicales.
+					Nuestra empresa se dedica a la manipulación, clasificación, envasado y comercialización de productos hortofrutícolas destinados tanto al mercado nacional como al mercado internacional (fundamentalmente europeo) en una proporción de 1 a 4. En menor medida también interviene en la producción directa de hortalizas y subtropicales.
 				</p>
 				<p>
 					La pandemia, tal y como ha ocurrido en todo el mundo, nos obligó a tomar una serie de medidas especiales en los procesos productivos: limpieza y desinfección con mayor frecuencia de centros de trabajo e instalaciones, controles de temperatura a la entrada, definición de grupos de trabajo y turnos estrictos entre el personal, dotación especial de material de desinfección, mascarillas y epis, cuarentenas y aislamientos en caso de contagios, etc.
 				</p>
 				<p>
-					Obviamente, todo esto trajo repercusiones de diferentes tipos y en diferentes ámbitos dentro de la empresa. Las más directas e inmediatas estuvieron relacionadas con el incremento importante del gasto en material de limpieza, desinfección y protección, aumento de personal dedicado a la limpieza y desinfección además de la importante cantidad de bajas, cuarentenas y absentismo ligado directamente a la problemática del covid.
+					Obviamente, todo esto trajo repercusiones de diferentes tipos y en diferentes ámbitos dentro de la empresa. Las más directas e inmediatas estuvieron relacionadas con el incremento importante del gasto en material de limpieza, desinfección y protección, aumento de personal dedicado a la limpieza y desinfección además de la importante cantidad de bajas, cuarentenas y absentismo ligado directamente a la problemática del covid. 
 				</p>
 				<p>
-					En general la evolución de los volúmenes manipulados y comercializados han seguido una evolución similar a la de campañas anteriores. Se ha de tener en cuenta que los productos objeto de la actividad de estas empresas están integrados, en su gran mayoría, en la dieta diaria básica de poblaciones muy amplias de los mercados de destino de estos productos, y en consecuencia la evolución de su demanda no se ha visto afectada. De igual forma los precios de los productos comercializados desde la irrupción de covid tampoco han evolucionado de forma diferente a como lo hicieron en campañas anteriores. Salvo excepciones, en momentos muy puntuales, la cadena de producción-manipulado-comercialización de estos productos no se ha visto afectada, lo que no ha provocado tensiones destacables ni en la demanda ni en la oferta debido a la pandemia.
+					En general la evolución de los volúmenes manipulados y comercializados han seguido un comportamiento similar a la de campañas anteriores. Se ha de tener en cuenta que los productos objeto de la actividad de estas empresas están integrados, en su gran mayoría, en la dieta diaria básica de poblaciones muy amplias de los mercados de destino, y en consecuencia la evolución de su demanda no se ha visto afectada. De igual forma los precios de los productos comercializados desde la irrupción de covid tampoco han evolucionado de forma diferente a como lo hicieron en campañas anteriores. Salvo excepciones, en momentos muy puntuales, la cadena de producción-manipulado-comercialización de estos productos no se ha visto afectada, lo que no ha provocado tensiones destacables ni en la demanda ni en la oferta debido a la pandemia. 
 				</p>
 				<p>
-					Si bien los volúmenes ni los precios de venta de los productos comercializados han sufrido variaciones significativas achacables al covid, no así la cuenta de resultados. Como resulta evidente las repercusiones más directas, han supuesto un mayor coste que no ha sido posible repercutir en todo su impacto al precio de venta, y ello porque la formación del precio de los productos que constituyen nuestra cartera, depende más del equilibrio entre oferta y demanda puntual de los mismos que del agregado aritmético de los costes de producción de los mismos.
+					Si bien los volúmenes ni los precios de venta de los productos comercializados han sufrido variaciones significativas achacables al covid, no así la cuenta de resultados. Como resulta evidente las repercusiones más directas, han supuesto un mayor coste que no ha sido posible repercutir en todo su impacto al precio de venta, y ello porque la formación del precio de los productos que constituyen nuestra cartera, depende más del equilibrio entre oferta y demanda puntual de los mismos que del agregado aritmético de los costes de producción de los mismos.	
 				</p>
 				<p>
-					En definitiva, los costes señalados han supuesto una merma del margen bruto de comercialización y en consecuencia del resultado final de la cuenta de resultados de las empresas del grupo.
+					En definitiva, los costes señalados han supuesto una merma del margen bruto de comercialización y en consecuencia del resultado final de la cuenta de resultados de las empresas del grupo. 
 				</p>
 			</i>
 
@@ -359,11 +376,11 @@
 			</p>
 
 			<p>
-				La verdad es que nos resultó bastante interesante la información que podemos extraer de este artículo, ya que nos llevó a plantearnos una nueva conclusión de nuestro análisis: no es directamente la pandemia la que ha afectado a los precios, sino los cambios en la oferta o demanda de los productos derivados de la misma.
+				La verdad es que nos resultó bastante interesante la información que se desprende de estas palabras, ya que nos llevó a plantearnos una nueva conclusión de nuestro análisis: no es directamente la pandemia la que ha afectado a los precios, sino los cambios en la oferta o demanda de los productos derivados de la misma. 
 			</p>
 
 			<p>
-				Algunos de los productos principales con los que trabaja la compañía del estudio son aguacates, calabacín, mango, melón, sandía, tomates cherry, etc. Veamos qué sucedió con el dos de ellos: el aguacate y el mango.
+				Algunos de los productos principales con los que trabaja la compañía del estudio son aguacates, calabacín, mango, melón, sandía, tomates cherry, etc. Veamos qué sucedió con dos de ellos: el aguacate y el mango.
 			</p>
 
 			<!-- Análisis Mango -->
@@ -373,11 +390,10 @@
 			</center>
 
 			<p>
-				Comencemos con el mango. Se trata de una de las frutas con mayor presencia y difusión en todo mundo debido a su jugosidad, sabor y sus buenas propiedades nutritivas. Nuestro país se sitúa como uno de los principales productores de esta fruta.
+				Comencemos con el mango. 
 			</p>
-
 			<p>
-				Se trata de un producto con el que se comercializa durante todo el año, pero las mayores cosechas se obtienen de agosto a octubre. Veamos qué ocurrió con las importaciones de mangos durante el año pasado, comparándolo con años anteriores:
+				Se trata de una de las frutas con mayor presencia y difusión en todo mundo debido a su jugosidad, sabor y sus buenas propiedades nutritivas. Nuestro país se sitúa como uno de los principales productores de esta fruta. Además, se comercializa durante todo el año, pero las mayores cosechas se obtienen de agosto a octubre. Veamos qué ocurrió con las importaciones de mangos durante el año pasado, comparándolo con años anteriores:
 			</p>
 
 			<figure class="highcharts-figure">
@@ -396,7 +412,7 @@
 			<script src="scripts/mango/mango-price-per-kg.js"></script>
 
 			<p>
-				Resulta llamativo que durante los peores meses de la pandemia (marzo, abril y mayo) la tendencia apenas cambiara. Sin embargo, en la segunda ola de la pandemia sí que percibimos un aumento de precio mayor al incremento de consumo derivado de la época de grandes cosechas del mismo.
+				Resulta llamativo que durante los peores meses de la pandemia (marzo, abril y mayo) la tendencia apenas cambiara. Sin embargo, en la segunda ola de la pandemia sí que percibimos un ligero aumento de precio por cada 100 Kg ligado al incremento de consumo.
 			</p>
 
 			<!-- Análisis Aguacate -->
@@ -428,7 +444,7 @@
 			<script src="scripts/avocado/avocado-value-imports.js"></script>
 
 			<p>
-				Es curioso como en este caso sí que se ve modificada la tendencia de años atrás, reflejándose sobre todo en el precio. Esto último lo asociamos a la ley de la oferta y demanda. Si hay una cantidad similar a la de años atrás de un producto y se produce un mayor reclamo de ese producto, el precio subirá.
+				Es curioso como en este caso sí que se ve modificada la tendencia de años atrás, reflejándose sobre todo en el valor de las importaciones aunque el precio unitario por kilogramo no se ha visto afectado, en línea con el informe de la empresa del sector. 
 			</p>
 
 			<figure class="highcharts-figure">
@@ -449,7 +465,7 @@
 			<script src="scripts/googleTrends/mango-vs-avocado.js"></script>
 
 			<p>
-				¡Wow! ¡Cómo cambia la tendencia de búsquedas durante el período de pandemia para el término ‘Recetas con aguacate’! ¡Mientras que para el mango se mantiene! Creemos que este es un claro indicador del efecto de la pandemia en nuestros estilos de vida. El mango, la sandía, etc. son frutas que se consumen en el día a día, las cuales no son muy habituales en recetas y no requieren ninguna preparación previa para ser consumidas en nuestras ajetreadas rutinas. Pero, durante la pandemia todo esto cambió, y pasamos a tener más tiempo (no teníamos que desplazarnos, ni preparar comida para el día siguiente, etc), dando lugar a que productos que normalmente se consumían menos debido a que requieren una mayor preparación pasaran a ser más habituales en nuestras dietas.
+				¡Wow! ¡Cómo cambia la tendencia de búsquedas durante el período de pandemia para el término ‘Recetas con aguacate’! ¡Mientras que para el mango se mantiene! Creemos que este es un claro indicador del efecto de la pandemia en nuestros estilos de vida. El mango, la sandía, etc. son frutas que se consumen en el día a día, las cuales no son muy habituales en recetas y no requieren ninguna preparación previa para ser consumidas en nuestras ajetreadas rutinas. Pero, durante la pandemia todo esto cambió, y pasamos a tener más tiempo (no teníamos que desplazarnos, ni preparar comida para el día siguiente, etc), dando lugar a que, productos que normalmente se consumían menos debido a que requieren una mayor preparación, pasaran a ser más habituales en nuestras dietas. 
 			</p>
 
 			<p>
@@ -469,7 +485,7 @@
 			<script src="scripts/googleTrends/ejercicio-vs-que-hacer-vs-recetas.js"></script>
 
 			<p>
-				Efectivamente, podemos apreciar una clara alteración de la tendencia durante los meses más duros, directamente relacionados con la imposibilidad de salir y la gran cantidad de tiempo libre del que disponíamos.
+				Efectivamente, podemos apreciar una clara alteración de la tendencia durante los meses más duros, directamente relacionados con la imposibilidad de salir y la gran cantidad de tiempo libre del que disponíamos. 
 			</p>
 
 			<p>
@@ -501,7 +517,7 @@
 			<script src="scripts/ajo/ajo-value.js"></script>
 
 			<p>
-				En este caso se aprecia perfectamente una gran variación sobre todo en el precio de los mismos que incluye también el mes de febrero (en el cual no habíamos comenzado a sufrir la pandemia en España, en enero también se produce incremento de precio pero va asociado a un aumento del volumen, mientras que en el segundo mes del año no). ¿Extraño verdad? Veamos cuales son los principales productores de este producto:
+				En este caso se aprecia perfectamente una gran variación sobre todo en el precio de los mismos que incluye también el mes de febrero en el que no habíamos comenzado a sufrir la pandemia en España. En enero también se produce incremento de precio aunque va asociado a un aumento del volumen, mientras que en el segundo mes del año no ocurre. ¿Extraño verdad? Veamos cuales son los principales productores de este producto:
 			</p>
 
 			<figure class="highcharts-figure">
@@ -510,11 +526,11 @@
 			<script src="scripts/ajo/ajo-producers.js"></script>
 
 			<p>
-				¡Curioso! Cómo todos sabemos el primer país donde se detectaron casos de COVID-19 fue China. Como consecuencia, tuvo que ser el primer país del mundo en confinarse (Comenzó el 23 de enero de 2020 y terminó el 8 de abril - Fuente Wikipedia). Durante este período las exportaciones procedentes del país asiático se vieron reducidas a mínimos históricos, haciendo que se disparara el consumo y precio de ajos procedentes de nuestro país (tal y como se puede apreciar en la gráfica de volumen y precio anterior).
+				¡Curioso! Cómo todos sabemos, el primer país donde se detectaron casos de COVID-19 fue China. Como consecuencia, fue el primer país del mundo en confinarse (Comenzó el 23 de enero de 2020 y terminó el 8 de abril - Fuente Wikipedia). Durante este período las exportaciones procedentes del país asiático se vieron reducidas a mínimos históricos, haciendo que se disparara el consumo y precio de ajos procedentes de nuestro país (tal y como se puede apreciar en la gráfica de volumen y precio anterior).
 			</p>
 
 			<p>
-				Desgraciadamente, no contamos apenas con datos de exportaciones de ajos procedentes de China, pero podemos comparar lo sucedido con otros productos, como la col china (del que China también es el mayor productor mundial):
+				Desgraciadamente, no contamos apenas con datos de exportaciones de ajos procedentes de China, pero podemos comparar lo sucedido con otros productos, como la col china (China también es su mayor productor mundial):
 			</p>
 
 			<!-- Análisis Limón -->
@@ -529,11 +545,11 @@
 			<script src="scripts/ajo/col-china-from-china.js"></script>
 
 			<p>
-				Se aprecia perfectamente como en los meses de enero, febrero y marzo se reducen en gran cantidad las exportaciones de este producto, casualmente los meses durante los que el país asiático estuvo confinado.
+				Se aprecia perfectamente como en los meses de enero, febrero y marzo se reducen en gran cantidad las exportaciones de este producto, casualmente los meses durante los que el país asiático estuvo confinado. 
 			</p>
 
 			<p>
-				Pero esto no pasó solamente con el ajo. Veamos qué ocurrió con otro producto que no puede faltar en ninguna despensa española.
+				Pero esto no pasó solamente con el ajo. Veamos qué ocurrió con otro producto que no puede faltar en ninguna despensa de España.
 			</p>
 
 			<!-- Análisis Limón -->
@@ -543,7 +559,7 @@
 			</center>
 
 			<p>
-				¡El limón! Un tesoro nutricional y muy beneficioso para nuestra salud: nos aporta vitaminas, elimina toxinas e incluso es un poderoso bactericida. De hecho, la OMS recomienda su consumo regular.
+				¡El limón! Un tesoro nutricional y muy beneficioso para nuestra salud: nos aporta vitaminas, elimina toxinas e incluso es un poderoso bactericida. De hecho, la OMS recomienda su consumo regular. 
 			</p>
 
 			<p>
@@ -587,11 +603,11 @@
 			<script src="scripts/lemon/lemon-imports-qv.js"></script>
 
 			<p>
-				En las importaciones podemos apreciar un cambio bastante notable, el cual se adelanta un mes al comienzo de la pandemia. Mientras que en las exportaciones percibimos cambios llamativos sobre todo en los meses de verano. Se producen unos picos muy acentuados en julio y agosto, los cuales, suelen coincidir con la mayor cantidad de exportaciones de limón, pero en este caso el cambio de tendencia tan fuerte resulta sorprendente.
+				En las importaciones podemos apreciar un cambio bastante notable, el cual se adelanta un mes al comienzo de la pandemia. Mientras que en las exportaciones percibimos cambios llamativos sobre todo en los meses de verano. Se producen unos picos muy acentuados en julio y agosto, que suelen coincidir con la mayor cantidad de exportaciones de limón, pero en este caso el cambio de tendencia tan fuerte resulta sorprendente.
 			</p>
 
 			<p>
-				Tal y como hemos mencionado en la introducción inicial, los primeros días de pandemia se produjo un caos inicial, en el cual la incertidumbre nos invadió a todos. ¿Quién no recuerda las estanterías vacías de supermercados? Veamos lo ocurrido con las frutas y verduras congeladas.
+				Tal y como hemos mencionado en la introducción inicial, los primeros días de pandemia se produjo un caos general, donde la incertidumbre nos invadió a todos. ¿Quién no recuerda las estanterías vacías de supermercados? Veamos lo ocurrido con las frutas y verduras congeladas y las de cuarta gama.
 			</p>
 
 			<!-- Análisis Verduras congeladas-->
@@ -601,11 +617,11 @@
 			</center>
 
 			<p>
-				Se trata de un caso muy particular en el que se aprecia perfectamente un creciente aumento en los volúmenes de estos productos. Este hecho lo asociamos principalmente al pánico irracional ante un confinamiento, el cual, se preveía que podía ser muy largo. Mucha gente, decidió hacer grandes compras para evitar salir durante esas semanas o por miedo a que se acabaran los productos en los supermercados. Y es ahí donde irrumpen los productos congelados: muy duraderos, asequibles y sanos (lo cual era muy importante y necesario en esos meses de confinamiento ya que nuestra actividad física se iba haber reducida considerablemente).
+				Se trata de un caso muy particular en el que se aprecia perfectamente un creciente aumento en los volúmenes de estos productos. Este hecho lo asociamos principalmente al pánico irracional ante un confinamiento, que se preveía que podía ser muy largo. Mucha gente, decidió hacer grandes compras para evitar salir durante esas semanas o por miedo a que se acabaran los productos en los supermercados. Y es ahí donde irrumpen los productos congelados y en conserva: muy duraderos, asequibles y sanos (hecho muy importante y necesario en esos meses de confinamiento ya que nuestra actividad física se iba a ver reducida considerablemente). 
 			</p>
 
 			<p>
-				Además, fueron muchas las páginas web y artículos entre los que recomiendan productos esenciales en la despensa, para la dieta… durante el confinamiento.
+				Además, fueron muchas las páginas web y artículos que recomendaban productos esenciales en la despensa, para la dieta… durante el confinamiento.
 			</p>
 
 			<div class=web-page>
@@ -642,7 +658,7 @@
 			<script src="scripts/frozenVegetables.js"></script>
 
 			<p>
-				Durante los meses de marzo, abril y mayo se produce una subida de los precios, mucho más acentuada en este último. Además, durante los meses de la segunda ola también se aprecia una nueva subida… ¿temor a un nuevo confinamiento? Bajo nuestro punto de vista es bastante probable.
+				Durante los meses de marzo, abril y mayo se produce una subida de los precios, mucho más acentuada en este último. Además, durante los meses de la segunda ola también se produce una nueva subida… ¿temor a un nuevo confinamiento? Bajo nuestro punto de vista es bastante probable.
 			</p>
 
 			<!-- Frutas y verduras cuarta gama -->
@@ -666,52 +682,70 @@
 			<script src="scripts/processedFruit.js"></script>
 
 			<p>
-				Tal y como podemos apreciar en el anterior gráfico, el aumento es considerablemente mayor en los meses de confinamiento, el cual, asociamos directamente a la ley de la oferta y la demanda.
+				Tal y como podemos apreciar en el anterior gráfico, el aumento es considerablemente mayor en los meses de confinamiento. Su origen lo asociamos directamente a la ley de la oferta y la demanda.
 			</p>
 
+			<p>
+				Por tanto, podemos concluir que la pandemia produjo un cambio de hábitos en la vida de todos que a su vez derivó en un incremento en el consumo de frutas y hortalizas. Pero esto no se ha trasladado al precio unitario en general, salvo contadas excepciones como el ajo, achacables a la falta de exportación del principal productor mundial. Otros casos que han visto incrementados sus precios son las frutas de cuarta gama o congelados directamente asociados al aumento de consumo producido en ese período.
+			</p>
 
-
+			<p>
+				En cuanto a la influencia del COViD-19 en las importaciones indicar que se produjo un incremento de precios al comienzo de la primera ola en los meses de marzo y abril. Por el contrario, las exportaciones en este primer período se comportaron de forma análoga a años anteriores mientras que subieron en el segundo período de repunte en los meses de julio, agosto y septiembre.
+			</p>
 	</div>
 
 	<div id=sec-5>
 
 		<div class="header-section" style="background-image: url('background/header-5.jpg')">
-			<div id=conclusiones-adicionales class=link></div>
-			<h2>Conclusiones adicionales</h2>
+			<div id=trabajo-futuro class=link></div>
+			<h2>Trabajo Futuro</h2>
 		</div>
 		<div class=text>
 			<p>
 				Aparte de todos los resultados y conclusiones que hemos obtenido en apartados anteriores, durante todo el análisis se nos han ido ocurriendo diferentes ideas que creemos que pueden ser interesantes de cara a futuros trabajos.
 			</p>
-			<p>
-				La principal razón de haber incluido un apartado adicional para este conjunto de conclusiones es que no se ha conseguido encontrar ningún dataset con el que comprobar si el razonamiento realizado es correcto o no. Adicionalmente se incluyen algunas noticias que contrastan nuestras teorías.
-			</p>
 
 			<h3>Excedentes en agricultura</h3>
 			<p>
-				The processing of time series, i.e., of data containing a relevant time organization for the problem to be solved, appears in multiple technological applications. We can find it for instance in the prediction of economic indicators, in the behavior of biomedical values, in the study of the transmission of infectious diseases such as COVID-19, or in the analysis of sign language.
+				Una de las conclusiones del trabajo ha sido que a pesar del aumento del volumen de consumo de muchos de los productos, el precio no ha variado. Es decir, ¡Ha habido oferta suficiente para el incremento de demanda!
 			</p>
 			<p>
-				In this final degree project, the study of the influence of different types of input coding, as well as data preprocessing techniques, on the efficiency in classification of multivariate time series it is proposed. All these details will be analyzed on machine learning models of neural networks such as multilayer networks, recurrent networks (RNN) or convolutional networks (CNN).
+				Esto nos llevó a plantearnos que quizás en años anteriores se producían grandes cantidades que nunca se llegaban a consumir y se desechaban.
+			</p>
+			<p>
+				Un trabajo interesante podría consistir en buscar datasets de los ‘Excedentes en agricultura’ y comparar si las tendencias siguen siendo las mismas de años anteriores.
+			</p>
+
+			<h3>Análisis de la harina</h3>
+			<p>
+				Uno de los productos estrella del confinamiento fueron las harinas, levaduras, etc. Según diferentes páginas web su consumo llegó a dispararse hasta un 200%. 
+			</p>
+			<p>
+				Nos hubiera gustado conseguir datos externos sobre los datos de ventas de este producto y comprobar si efectivamente esto sucedió. También podría ser interesante analizar la variación de precios asociados a este disparo de la demanda.
+			</p>
+
+			<h3>Comparación con las tendencias de Twitter</h3>
+			<p>
+				Durante todo este trabajo, para analizar el comportamiento de la población, se han empleado los datos de búsqueda proporcionados por Google a través de su página Google Trends. 
+			</p>
+			<p>
+				Pero, existe una red social, en la que sus usuarios muestran día tras día sus intereses, aficiones, etc. Se trata de Twitter. De cara a ampliar este análisis podríamos hacer uso de los datos que proporciona este microblog para estudiar las preocupaciones de la población y compararla con los cambios de tendencia en las frutas y verduras.
+			</p>
+			<p>
+				Dejamos un enlace que puede servir de referencia de cara a esta posible ampliación:
 			</p>
 
 			<div class=web-page>
-				<a  target="_blank" href="https://www.abc.es/espana/madrid/abci-comprar-comprar-coronavirus-llegar-202003092217_noticia.html?ref=https%3A%2F%2Fwww.google.com%2F">
-				<div class=new-image style="background: url(news/new-1.jpg);"></div>
+				<a  target="_blank" href="https://towardsdatascience.com/coronavirus-twitter-trends-d32fed5a027e">
+				<div class=new-image style="background: url(news/new-9.jpeg);"></div>
 				<div class=container>
-					<h1>Titulo noticia</h1>
-					<p>Texto de prueba de la noticia... In this final degree project, the study of the influence of different types of input coding, as well as data preprocessing techniques, on the efficiency in classification of multivariate time series it is proposed.</p>
+					<h1>Exploring Coronavirus Twitter Trends</h1>
+					<p>
+						The COVID-19 pandemic has changed the world. How has it changed our tweets? By Sarah Tam and Debbie Hahm
+					</p>
 				</div>
 				</a>
 			</div>
-
-			<h3>Otra conclusión adicional</h3>
-			<p>
-				The processing of time series, i.e., of data containing a relevant time organization for the problem to be solved, appears in multiple technological applications. We can find it for instance in the prediction of economic indicators, in the behavior of biomedical values, in the study of the transmission of infectious diseases such as COVID-19, or in the analysis of sign language.
-			</p>
-			<p>
-				In this final degree project, the study of the influence of different types of input coding, as well as data preprocessing techniques, on the efficiency in classification of multivariate time series it is proposed. All these details will be analyzed on machine learning models of neural networks such as multilayer networks, recurrent networks (RNN) or convolutional networks (CNN).
-			</p>
 		</div>
 
 	</div>
