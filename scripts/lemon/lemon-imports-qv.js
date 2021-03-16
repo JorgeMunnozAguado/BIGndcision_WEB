@@ -30,13 +30,13 @@ Highcharts.chart('container-lemon-imports-qv', {
     title: {
       text: 'Cantidad en Kg (100 Kg).',
       style: {
-        color: '#D5CB01'
+        color: '#F4A460'
       }
     },
     labels: {
       format: '{value} Kg',
       style: {
-        color: '#D5CB01'
+        color: '#F4A460'
       }
     },
     opposite: true
@@ -62,7 +62,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     {
       name: '2018 (Cant.)',
       type: 'column',
-      color: '#EAE000',
+      color: '#F0D58C',
       data: [947560,825882,984676,930451,1028532,850282,550507,385207,341195,520428,749291],
       yAxis: 1,
       tooltip: {
@@ -71,7 +71,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     }, {
       name: '2019 (Cant.)',
       type: 'column',
-      color: '#FFE000',
+      color: '#FFCC00',
       data: [905277,821203,993649,1076632,1110317,1213653,1031842,628728,430184,709363,898610],
       yAxis: 1,
       tooltip: {
@@ -81,7 +81,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     }, {
       name: '2020 (Cant.)',
       type: 'column',
-      color: '#FFD842',
+      color: '#F4A460',
       data: [993261,948260,1396583,1409592,1107908,873028,725001,502767,613544,775072,853904],
       yAxis: 1,
       tooltip: {
