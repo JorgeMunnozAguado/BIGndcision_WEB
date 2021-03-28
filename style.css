@@ -1,7 +1,16 @@
 
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
 html {
 	font-family: "Quicksand", sans-serif;
 	font-size: 18px;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -57,7 +66,7 @@ a {
     text-decoration: none;
 }
 
-p::selection, b::selection, i::selection {
+p::selection, b::selection, i::selection, b::selection, p2::selection, a::selection, img::selection {
   background: #ffb7b7; /* WebKit/Blink Browsers */
 }
 
@@ -72,6 +81,17 @@ p::selection, b::selection, i::selection {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+#header-top-1 {
+	animation: title-1 2.5s;
+	transition: 0.5s;
+}
+
+#header-top-2 {
+	animation: title-2 3s;
+	margin-top: 10px;
+	font-size: 32px;
 }
 
 .link {
@@ -102,6 +122,10 @@ p::selection, b::selection, i::selection {
 	font-weight: 100;
 }
 
+#index ul::selection, li::selection {
+	background: none;
+}
+
 #index a {
 	color: #fff;
 	text-decoration: none;
@@ -111,6 +135,29 @@ p::selection, b::selection, i::selection {
 	background: #e69482;
 }
 
+
+#scroll {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  outline: none;
+  background-color: #f7a08d;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+#scroll:hover {
+  background-color: #555;
+}
+
+#scroll img {
+	height: 25px;
+    width: 20px;
+}
 
 #people {
 	padding: 5px 0 50px 0;
@@ -222,6 +269,7 @@ p::selection, b::selection, i::selection {
 
 /************ RESPONSIVE  ************/
 
+/* MOBILE */
 @media only screen and (max-width: 481px) {
 
 h1 {
@@ -232,6 +280,10 @@ h1 {
 
 h2 {
 	font-size: 35px;
+}
+
+#header-top-2 {
+	font-size: 28px;
 }
 
 .header-section {
@@ -276,7 +328,7 @@ h2 {
 
 }
 
-
+/* TABLET */
 @media only screen and (min-width:481px) and (max-width: 961px) {
 
 h1 {

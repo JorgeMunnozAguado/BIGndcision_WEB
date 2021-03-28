@@ -1,0 +1,44 @@
+
+@keyframes title-1 {
+  from { font-size: 0 }
+  to { font-size: 70px }
+}
+
+@keyframes title-2 {
+  0% { font-size: 0 }
+  25% { font-size: 0 }
+  100% { font-size: 32px }
+}
+
+
+
+
+/************ RESPONSIVE  ************/
+
+/* MOBILE */
+@media only screen and (max-width: 481px) {
+
+@keyframes title-1 {
+  from { font-size: 0 }
+  to { font-size: 45px }
+}
+
+@keyframes title-2 {
+  0% { font-size: 0 }
+  25% { font-size: 0 }
+  100% { font-size: 28px }
+}
+
+}
+
+/* TABLET */
+@media only screen and (min-width:481px) and (max-width: 961px) {
+
+@keyframes title-1 {
+  from { font-size: 0 }
+  to { font-size: 65px }
+}
+
+}
+
+}
