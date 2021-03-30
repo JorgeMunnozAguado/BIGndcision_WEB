@@ -36,6 +36,8 @@ function highlightNavigation() {
     // get the current vertical position of the scroll bar
     var scrollPosition = $(window).scrollTop();
 
+    $navigationLinks.removeClass('active');
+
     // iterate the sections
     $sections.each(function() {
         var currentSection = $(this);
@@ -46,25 +48,15 @@ function highlightNavigation() {
 
         if (scrollPosition >= sectionTop) {
 
-            // get the section id
-            var id = currentSection.attr('id');
-            // get the corresponding navigation link
-            var $navigationLink = sectionIdTonavigationLink[id];
-            // if the link is not active
-            if (!$navigationLink.hasClass('active')) {
+            id = currentSection.attr('id');
+            $navigationLink = sectionIdTonavigationLink[id];
+            $navigationLink.addClass('active');
 
-                // remove .active class from all the links
-                $navigationLinks.removeClass('active');
-                // add .active class to the current link
-                $navigationLink.addClass('active');
-            }
-            // we have found our section, so we return false to exit the each loop
             return false;
+
         }
     });
+
 }
 
-$(window).scroll( throttle(highlightNavigation,100) );
-
-// if you don't want to throttle the function use this instead:
-// $(window).scroll( highlightNavigation );
+$(window).scroll( throttle(highlightNavigation, 10) );
