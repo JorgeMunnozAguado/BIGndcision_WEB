@@ -23,15 +23,15 @@ chart.data = [
     visits: 381851
   },
   {
-    country: "Egypt",
+    country: "Egipto",
     visits: 280216
   },
   {
-    country: "South Korea",
+    country: "Corea del sur",
     visits: 275549
   },
   {
-    country: "Russia",
+    country: "Rusia",
     visits: 262211
   },
   {
@@ -39,19 +39,19 @@ chart.data = [
     visits: 212909
   },
   {
-    country: "Ukraine",
+    country: "Ucrania",
     visits: 187960
   },
   {
-    country: "Uzbekistn",
+    country: "Uzbekistán",
     visits: 174170
   },
   {
-    country: "Spain",
+    country: "España",
     visits: 170042
   },
   {
-    country: "United States",
+    country: "Estados Unidos",
     visits: 167370
   },
   {
@@ -64,10 +64,18 @@ chart.colors.list = [
   am4core.color("#BAB489"),
 ];
 
+var subtitle = chart.titles.create();
+//subtitle.text = 'Source: www.atlasbig.com';
+subtitle.marginBottom = 10;
+subtitle.html =  'Source: <a href="https://www.atlasbig.com/es-es/paises-por-produccion-de-ajo#:~:text=China%20es%20el%20mayor%20productor,170.042%20ocupa%20el%20puesto%2010.">www.atlasbig.com</a>'
+subtitle.color = 'black';
+
 var title = chart.titles.create();
 title.text = "Principales productores de ajo";
 title.fontSize = 25;
-title.marginBottom = 15;
+title.marginBottom = 10;
+title.fontWeight = "bold";
+
 
 var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
 categoryAxis.renderer.grid.template.location = 0;
@@ -77,6 +85,9 @@ categoryAxis.fontSize = 11;
 categoryAxis.renderer.labels.template.dy = 5;
 categoryAxis.renderer.inversed = true;
 categoryAxis.renderer.grid.template.disabled = true;
+categoryAxis.title.text = "Paises";
+categoryAxis.title.fontWeight = "bold";
+
 
 var image = new am4core.Image();
 image.horizontalCenter = "middle";
@@ -86,7 +97,8 @@ image.verticalCenter = "middle";
 image.adapter.add("href", (href, target)=>{
   let category = target.dataItem.category;
   if(category){
-    return "https://www.amcharts.com/wp-content/uploads/flags/" + category.split(" ").join("-").toLowerCase() + ".svg";
+    //return "https://www.amcharts.com/wp-content/uploads/flags/" + category.split(" ").join("-").toLowerCase() + ".svg";
+    return "countryIcons/" + category+ ".png"
   }
   return href;
 })
@@ -99,6 +111,10 @@ valueAxis.strictMinMax = true;
 valueAxis.renderer.minGridDistance = 100;
 valueAxis.gridThickness = 0;
 valueAxis.labelsEnabled = false;
+valueAxis.fontSize = 11;
+valueAxis.title.text = "Volumen (Kg.)";
+valueAxis.title.fontWeight = "bold";
+valueAxis.title.fontSize = 10;
 
 
 var axisBreak = valueAxis.axisBreaks.create();
