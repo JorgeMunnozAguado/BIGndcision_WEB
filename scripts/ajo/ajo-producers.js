@@ -65,7 +65,6 @@ chart.colors.list = [
 ];
 
 var subtitle = chart.titles.create();
-//subtitle.text = 'Source: www.atlasbig.com';
 subtitle.marginBottom = 10;
 subtitle.html =  'Source: <a href="https://www.atlasbig.com/es-es/paises-por-produccion-de-ajo#:~:text=China%20es%20el%20mayor%20productor,170.042%20ocupa%20el%20puesto%2010.">www.atlasbig.com</a>'
 subtitle.color = 'black';
@@ -97,7 +96,6 @@ image.verticalCenter = "middle";
 image.adapter.add("href", (href, target)=>{
   let category = target.dataItem.category;
   if(category){
-    //return "https://www.amcharts.com/wp-content/uploads/flags/" + category.split(" ").join("-").toLowerCase() + ".svg";
     return "countryIcons/" + category+ ".png"
   }
   return href;
@@ -120,7 +118,7 @@ valueAxis.title.fontSize = 10;
 var axisBreak = valueAxis.axisBreaks.create();
 axisBreak.startValue = 1500000;
 axisBreak.endValue = 21000000;
-//axisBreak.breakSize = 0.005;
+axisBreak.breakSize = 0.005;
 
 // fixed axis break
 var d = (axisBreak.endValue - axisBreak.startValue) / (valueAxis.max - valueAxis.min);
@@ -134,21 +132,6 @@ hoverState.transitionDuration = 1500;
 
 axisBreak.defaultState.transitionDuration = 1000;
 
-// this is exactly the same, but with events
-/*axisBreak.events.on("over", function() {
-  axisBreak.animate(
-    [{ property: "breakSize", to: 1 }, { property: "opacity", to: 0.1 }],
-    1500,
-    am4core.ease.sinOut
-  );
-});
-axisBreak.events.on("out", function() {
-  axisBreak.animate(
-    [{ property: "breakSize", to: 0.005 }, { property: "opacity", to: 1 }],
-    1000,
-    am4core.ease.quadOut
-  );
-});*/
 
 var series = chart.series.push(new am4charts.ColumnSeries());
 series.dataFields.categoryY = "country";
@@ -174,4 +157,4 @@ series.columns.template.adapter.add("fill", function(fill, target) {
   return chart.colors.getIndex(target.dataItem.index);
 });
 
-}); // end am4core.ready()
+});
