@@ -15,7 +15,12 @@ Highcharts.chart('container_covid_exp_eur', {
   }],
   yAxis: [{ // Primary yAxis
     labels: {
-      format: '{value} €',
+      formatter: function() {
+          if (this.value >= 1E6) {
+            return (this.value / 1000000).toFixed(0) + 'M €';
+          }
+          return this.value / 1000 + 'k €';
+      },
       style: {
         color: Highcharts.getOptions().colors[1]
       }
@@ -34,7 +39,12 @@ Highcharts.chart('container_covid_exp_eur', {
       }
     },
     labels: {
-      format: '{value} casos',
+      formatter: function() {
+          if (this.value >= 1E6) {
+            return (this.value / 1000000).toFixed(0) + 'M casos';
+          }
+          return this.value / 1000 + 'k casos';
+      },
       style: {
         color: '#f7a08d'
       }

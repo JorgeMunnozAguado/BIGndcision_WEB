@@ -27,7 +27,7 @@ Highcharts.chart('mango-cuantity-imports-container', {
   yAxis: {
     min: 0,
     title: {
-      text: 'Cantidad del producto en peso (100 KG).'
+      text: 'Cantidad del producto en peso (100 kg).'
     }
   },
   tooltip: {

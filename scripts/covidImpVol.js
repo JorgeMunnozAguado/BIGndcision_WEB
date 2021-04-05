@@ -15,7 +15,12 @@ Highcharts.chart('container_covid_imp_vol', {
   }],
   yAxis: [{ // Primary yAxis
     labels: {
-      format: '{value} Kg',
+      formatter: function() {
+          if (this.value >= 1E6) {
+            return (this.value / 1000000).toFixed(0) + 'M kg';
+          }
+          return this.value / 1000 + 'k kg';
+      },
       style: {
         color: Highcharts.getOptions().colors[1]
       }
@@ -34,7 +39,12 @@ Highcharts.chart('container_covid_imp_vol', {
       }
     },
     labels: {
-      format: '{value} casos',
+      formatter: function() {
+          if (this.value >= 1E6) {
+            return (this.value / 1000000).toFixed(0) + 'M casos';
+          }
+          return this.value / 1000 + 'k casos';
+      },
       style: {
         color: '#f7a08d'
       }

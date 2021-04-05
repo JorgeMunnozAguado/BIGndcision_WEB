@@ -27,7 +27,7 @@ Highcharts.chart('processedFruit-prices-container', {
   yAxis: {
     min: 0,
     title: {
-      text: 'Precios (€).'
+      text: 'Precios (€)'
     }
   },
   tooltip: {

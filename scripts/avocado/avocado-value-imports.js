@@ -26,8 +26,16 @@ Highcharts.chart('avocado-value-imports-container', {
   },
   yAxis: {
     min: 0,
+    labels: {
+      formatter: function() {
+          if (this.value >= 1E6) {
+            return (this.value / 1000000).toFixed(0) + 'M €';
+          }
+          return this.value / 1000 + 'k €';
+      },
+    },
     title: {
-      text: 'Valor en euros.'
+      text: 'Valor en euros (€)'
     }
   },
   tooltip: {

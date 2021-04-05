@@ -15,7 +15,12 @@ Highcharts.chart('container-lemon-exports-qv', {
   }],
   yAxis: [{ // Primary yAxis
     labels: {
-      format: '{value} €',
+      formatter: function() {
+          if (this.value >= 1E6) {
+            return (this.value / 1000000).toFixed(0) + 'M €';
+          }
+          return this.value / 1000 + 'k €';
+      },
       style: {
         color: Highcharts.getOptions().colors[1]
       }
@@ -34,7 +39,6 @@ Highcharts.chart('container-lemon-exports-qv', {
       }
     },
     labels: {
-      format: '{value} Kg',
       style: {
         color: '#F4A460'
       }
