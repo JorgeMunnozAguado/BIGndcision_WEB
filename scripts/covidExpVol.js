@@ -26,7 +26,7 @@ Highcharts.chart('container_covid_exp_vol', {
       }
     },
     title: {
-      text: 'Importaciones (Kg)',
+      text: 'Exportaciones (Kg)',
       style: {
         color: Highcharts.getOptions().colors[1]
       }
@@ -46,7 +46,7 @@ Highcharts.chart('container_covid_exp_vol', {
           return this.value / 1000 + 'k casos';
       },
       style: {
-        color:'#f7a08d'
+        color: '#f7a08d'
       }
     },
     opposite: true
@@ -77,8 +77,8 @@ Highcharts.chart('container_covid_exp_vol', {
   }, {
     name: '2018',
     type: 'spline',
-    color: '#FFC300',
-    data: [3295449, 3198635, 3591667, 3659002, 3824754, 3009800, 2938138, 3111301, 3624832, 3977684, 3397518],
+    color: '#e4d3ff',
+    data: [18442704, 15885473, 16102876, 14884110, 16230572, 15599005, 14570120, 12691929, 9517391, 10462188, 15574249],
     tooltip: {
       valueSuffix: 'Kg'
     }
@@ -86,8 +86,8 @@ Highcharts.chart('container_covid_exp_vol', {
   {
     name: '2019',
     type: 'spline',
-    color:'#DAF7A6',
-    data: [3568358, 3639892, 3911088, 3688443, 2857245, 2270325, 2330569, 3094761, 3720202,4383667, 3525695],
+    color:'#FBEBB0 ',
+    data: [19100104, 17025219, 17435189, 15986044, 17286217, 18478312, 16567160, 12214679,9853493, 11595996, 16168689],
     tooltip: {
       valueSuffix: 'Kg'
     }
@@ -95,8 +95,8 @@ Highcharts.chart('container_covid_exp_vol', {
   {
     name: '2020',
     type: 'spline',
-    color:'#8AFFF8',
-    data: [3338759, 3279526, 3921758, 3678496, 2467229, 2016878, 3157815, 3844944, 3803184,4024177, 3394670],
+    color: '#B0D3FB',
+    data: [19192297, 17096899, 18419185, 16240903, 15749511, 16530088, 14561528, 11733027, 9052289, 11732311, 16939784],
     tooltip: {
       valueSuffix: 'Kg'
     }
