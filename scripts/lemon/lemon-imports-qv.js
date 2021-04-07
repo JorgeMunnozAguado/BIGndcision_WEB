@@ -3,7 +3,7 @@ Highcharts.chart('container-lemon-imports-qv', {
     zoomType: 'xy'
   },
   title: {
-    text: 'Evolución de las importaciones de limones'
+    text: 'Evoluciones de las importaciones de limones'
   },
   subtitle: {
     text: 'Source: Eurostat.'
@@ -39,7 +39,6 @@ Highcharts.chart('container-lemon-imports-qv', {
       }
     },
     labels: {
-      // format: '{value}',
       style: {
         color: '#F4A460'
       }
@@ -53,6 +52,7 @@ Highcharts.chart('container-lemon-imports-qv', {
 
   legend: {
     layout: 'vertical',
+    align: 'left',
     x: 120,
     verticalAlign: 'top',
     y: 100,
@@ -68,7 +68,7 @@ Highcharts.chart('container-lemon-imports-qv', {
       name: '2018 (Cant.)',
       type: 'column',
       color: '#F0D58C',
-      data: [947560,825882,984676,930451,1028532,850282,550507,385207,341195,520428,749291],
+      data: [2238,8558,22500,6729,19084,93464,114462,147200,75795,63225,9220],
       yAxis: 1,
       tooltip: {
         valueSuffix: ' Kg'
@@ -77,7 +77,7 @@ Highcharts.chart('container-lemon-imports-qv', {
       name: '2019 (Cant.)',
       type: 'column',
       color: '#FFCC00',
-      data: [905277,821203,993649,1076632,1110317,1213653,1031842,628728,430184,709363,898610],
+      data: [4902,3394,2043,4543,2606,25131,102115,168934,102218,42544,5707],
       yAxis: 1,
       tooltip: {
         valueSuffix: ' Kg'
@@ -87,7 +87,7 @@ Highcharts.chart('container-lemon-imports-qv', {
       name: '2020 (Cant.)',
       type: 'column',
       color: '#F4A460',
-      data: [993261,948260,1396583,1409592,1107908,873028,725001,502767,613544,775072,853904],
+      data: [7204,6090,5499,9121,27209,71577,243134,232518,102452,97303,60670],
       yAxis: 1,
       tooltip: {
         valueSuffix: ' Kg'
@@ -98,7 +98,7 @@ Highcharts.chart('container-lemon-imports-qv', {
       name: '2018 (Val.)',
       type: 'spline',
       color: '#A0D849 ',
-      data: [103375620,88165844,102362732,97869892,139238504,131842852,87267096,65450130,60551200,76597122,94449840],
+      data: [236256,580422,1879910,392412,1882824,11409262,13971506,19498526,10995012,8477278,779918],
       tooltip: {
         valueSuffix: ' €'
       }
@@ -106,7 +106,7 @@ Highcharts.chart('container-lemon-imports-qv', {
       name: '2019 (Val.)',
       type: 'spline',
       color: '#669E0F',
-      data: [93258060,80417174,91318792,97259686,112625598,126251894,107063440,67830112,54528200,90881878,107071058],
+      data: [439088,262368,127568,385832,256022,3071474,10270240,17553388,10559096,4330444,618870],
       tooltip: {
         valueSuffix: ' €'
       }
@@ -115,7 +115,7 @@ Highcharts.chart('container-lemon-imports-qv', {
       name: '2020 (Val.)',
       type: 'spline',
       color: ' #4E8001 ',
-      data: [113800424,102262382,149368162,195976126,169843052,143245326,104125732,75742946,96499762,105231494,108767004],
+      data: [482330,413280,299464,490950,2488054,7761502,26600538,28389420,10861950,9982396,7077462],
       tooltip: {
         valueSuffix: ' €'
       }

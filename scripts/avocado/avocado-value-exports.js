@@ -1,9 +1,9 @@
-Highcharts.chart('avocado-value-imports-container', {
+Highcharts.chart('avocado-value-exports-container', {
   chart: {
     type: 'column'
   },
   title: {
-    text: 'Evolución del valor de las importaciones de aguacate en España.'
+    text: 'Evolución del valor de las exportaciones de aguacate en España.'
   },
   subtitle: {
     text: 'Source: Eurostat.'
@@ -41,7 +41,7 @@ Highcharts.chart('avocado-value-imports-container', {
   tooltip: {
     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-      '<td style="padding:0"><b>{point.y:.1f} valor de las importaciones en euros</b></td></tr>',
+      '<td style="padding:0"><b>{point.y:.1f} valor de las exportaciones en euros</b></td></tr>',
     footerFormat: '</table>',
     shared: true,
     useHTML: true

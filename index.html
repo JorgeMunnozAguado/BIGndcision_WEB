@@ -216,6 +216,9 @@
 			<div class="flourish-embed flourish-chart" data-src="story/230114">
 				<script src="https://public.flourish.studio/resources/embed.js"></script>
 			</div>
+			<p class="highcharts-description">
+				Fuente: <a href="https://app.flourish.studio/" target="_blank">Flourish Studio</a>.
+			</p>
 
 			<!-- Dataset 1 -->
 			<h3>Consumo y precio alimentario mensual en España</h3>
@@ -294,10 +297,10 @@
 			<script src="scripts/d4-select-quantity-chart.js"></script>
 
 			<p>
-				Resulta bastante interesante comparar la cantidad con el valor en euros de los intercambios realizados. Podemos apreciar como en las importaciones la cantidad de producto intercambiado sigue la tendencia alcista de años atrás (en los meses de febrero, marzo y abril), mientras que los precios también suben, pero de forma más acentuada en ese trimestre.
+				Resulta bastante interesante comparar la cantidad con el valor en euros de los intercambios realizados. Podemos apreciar como en las exportaciones la cantidad de producto intercambiado sigue la tendencia alcista de años atrás (en los meses de febrero, marzo y abril), mientras que los precios también suben, pero de forma más acentuada en ese trimestre.
 			</p>
 			<p>
-				En las exportaciones resulta curioso cómo este hecho no se percibe con tanta claridad y el comportamiento se mantiene estable respecto a años anteriores, tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple.
+				En las importaciones resulta curioso cómo este hecho no se percibe con tanta claridad y el comportamiento se mantiene estable respecto a años anteriores, tanto en el precio como en peso. De hecho, la tendencia alcista que se podría esperar observando la evolución de años anteriores no se cumple. 
 			</p>
 
 			<!-- Combinación Dataset 4 y COViD -->
@@ -305,6 +308,21 @@
 
 			<p>
 				Por último, quisimos analizar con más detalle la evolución de la pandemia frente a las importaciones y exportaciones de frutas y verduras. Se encuentra muy relacionado con el apartado anterior, pero de esta forma veremos con una claridad mucho mayor la influencia del virus:
+			</p>
+
+			
+			<figure class="highcharts-figure">
+				<div id="container_covid_exp_eur"></div>
+			</figure>
+			<script src="scripts/covidExpEur.js"></script>
+
+			<figure class="highcharts-figure">
+				<div id="container_covid_exp_vol"></div>
+			</figure>
+			<script src="scripts/covidExpVol.js"></script>
+
+			<p>
+				En estas dos primeras gráficas se puede observar perfectamente el cambio debido a la  influencia de la primera ola de la pandemia: sobre todo durante marzo y abril se produce un incremento del valor, mientras que el volumen exportado sigue el mismo comportamiento, por tanto, se deriva un incremento del precio. Tras esto, tanto el volumen como el valor en euros siguen las tendencias de años anteriores.
 			</p>
 
 			<figure class="highcharts-figure">
@@ -318,21 +336,7 @@
 			<script src="scripts/covidImpVol.js"></script>
 
 			<p>
-				En estas dos primeras gráficas se puede observar perfectamente el cambio debido a la  influencia de la primera ola de la pandemia: sobre todo durante marzo y abril se produce un incremento del valor, mientras que el volumen importado sigue el mismo comportamiento, por tanto, se deriva un incremento del precio. Tras esto, tanto el volumen como el valor en euros siguen las tendencias de años anteriores.
-			</p>
-
-			<figure class="highcharts-figure">
-				<div id="container_covid_exp_eur"></div>
-			</figure>
-			<script src="scripts/covidExpEur.js"></script>
-
-			<figure class="highcharts-figure">
-				<div id="container_covid_exp_vol"></div>
-			</figure>
-			<script src="scripts/covidExpVol.js"></script>
-
-			<p>
-				Por el contrario, las exportaciones se comportan de forma opuesta. Durante la primera ola apenas se aprecia cambio respecto a años anteriores mientras que en la fase de subida de la segunda (meses de julio, agosto y septiembre) se produce un aumento bastante considerable tanto del volumen como del coste.
+				Por el contrario, las importaciones se comportan de forma opuesta. Durante la primera ola apenas se aprecia cambio respecto a años anteriores mientras que en la fase de subida de la segunda (meses de julio, agosto y septiembre) se produce un aumento bastante considerable tanto del volumen como del coste. 
 			</p>
 
 			<p>
@@ -402,18 +406,18 @@
 				Comencemos con el mango.
 			</p>
 			<p>
-				Se trata de una de las frutas con mayor presencia y difusión en todo mundo debido a su jugosidad, sabor y sus buenas propiedades nutritivas. Nuestro país se sitúa como uno de los principales productores de esta fruta. Además, se comercializa durante todo el año, pero las mayores cosechas se obtienen de agosto a octubre. Veamos qué ocurrió con las importaciones de mangos durante el año pasado, comparándolo con años anteriores:
+				Se trata de una de las frutas con mayor presencia y difusión en todo mundo debido a su jugosidad, sabor y sus buenas propiedades nutritivas. Nuestro país se sitúa como uno de los principales productores de esta fruta. Además, se comercializa durante todo el año, pero las mayores cosechas se obtienen de agosto a octubre. Veamos qué ocurrió con las exportaciones de mangos durante el año pasado, comparándolo con años anteriores:
 			</p>
 
 			<figure class="highcharts-figure">
-				<div id="mango-cuantity-imports-container"></div>
+				<div id="mango-cuantity-exports-container"></div>
 			</figure>
-			<script src="scripts/mango/mango-quantity-imports.js"></script>
+			<script src="scripts/mango/mango-quantity-exports.js"></script>
 
 			<figure class="highcharts-figure">
-				<div id="mango-value-imports-container"></div>
+				<div id="mango-value-exports-container"></div>
 			</figure>
-			<script src="scripts/mango/mango-value-imports.js"></script>
+			<script src="scripts/mango/mango-value-exports.js"></script>
 
 			<figure class="highcharts-figure">
 				<div id="container-mango-price-per-kg"></div>
@@ -443,17 +447,17 @@
 			</p>
 
 			<figure class="highcharts-figure">
-				<div id="avocado-cuantity-imports-container"></div>
+				<div id="avocado-cuantity-exports-container"></div>
 			</figure>
-			<script src="scripts/avocado/avocado-quantity-imports.js"></script>
+			<script src="scripts/avocado/avocado-quantity-exports.js"></script>
 
 			<figure class="highcharts-figure">
-				<div id="avocado-value-imports-container"></div>
+				<div id="avocado-value-exports-container"></div>
 			</figure>
-			<script src="scripts/avocado/avocado-value-imports.js"></script>
+			<script src="scripts/avocado/avocado-value-exports.js"></script>
 
 			<p>
-				Es curioso como en este caso sí que se ve modificada la tendencia de años atrás, reflejándose sobre todo en el valor de las importaciones aunque el precio unitario por kilogramo no se ha visto afectado, en línea con el informe de la empresa del sector.
+				Es curioso como en este caso sí que se ve modificada la tendencia de años atrás, reflejándose sobre todo en el valor de las exportaciones aunque el precio unitario por kilogramo no se ha visto afectado, en línea con el informe de la empresa del sector. 
 			</p>
 
 			<figure class="highcharts-figure">
@@ -478,7 +482,7 @@
 			</p>
 
 			<p>
-				Este cambio se refleja sobre todo en las importaciones, mientras que en las exportaciones no se aprecia tan claramente.
+				Este cambio se refleja sobre todo en las exportaciones, mientras que en las importaciones no se aprecia tan claramente. Esto lo asociamos a que España es un país mayoritariamente productor y no requiere de otros países para satisfacer sus necesidades internas. 
 			</p>
 
 			<p>
@@ -612,7 +616,7 @@
 			<script src="scripts/lemon/lemon-imports-qv.js"></script>
 
 			<p>
-				En las importaciones podemos apreciar un cambio bastante notable, el cual se adelanta un mes al comienzo de la pandemia. Mientras que en las exportaciones percibimos cambios llamativos sobre todo en los meses de verano. Se producen unos picos muy acentuados en julio y agosto, que suelen coincidir con la mayor cantidad de exportaciones de limón, pero en este caso el cambio de tendencia tan fuerte resulta sorprendente.
+				En las exportaciones podemos apreciar un cambio bastante notable, el cual se adelanta un mes al comienzo de la pandemia. Mientras que en las importaciones percibimos cambios llamativos sobre todo en los meses de verano. Se producen unos picos muy acentuados en julio y agosto, que suelen coincidir con la época de menor producción del producto en España, y, como consecuencia se importa más (<a href="https://soydetemporada.es/products/limon/#:~:text=El%20lim%C3%B3n%20puede%20encontrarse%20desde,hasta%20ya%20entrado%20el%20verano." target="_blank">Datos de comercio de limón en España</a>), pero en este caso el cambio de tendencia tan fuerte resulta sorprendente. 
 			</p>
 
 			<p>

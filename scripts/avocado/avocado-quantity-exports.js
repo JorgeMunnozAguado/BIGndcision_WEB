@@ -1,9 +1,9 @@
-Highcharts.chart('mango-value-imports-container', {
+Highcharts.chart('avocado-cuantity-exports-container', {
   chart: {
     type: 'column'
   },
   title: {
-    text: 'Evolución del valor de las importaciones de mango en España.'
+    text: 'Evolución de la cantidad de exportaciones de aguacate en España.'
   },
   subtitle: {
     text: 'Source: Eurostat.'
@@ -27,13 +27,13 @@ Highcharts.chart('mango-value-imports-container', {
   yAxis: {
     min: 0,
     title: {
-      text: 'Valor en euros.'
+      text: 'Cantidad del producto en peso (100 KG).'
     }
   },
   tooltip: {
     headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
     pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-      '<td style="padding:0"><b>{point.y:.1f} valor de las importaciones en euros</b></td></tr>',
+      '<td style="padding:0"><b>{point.y:.1f} cantidad del producto en KG (100 KG)</b></td></tr>',
     footerFormat: '</table>',
     shared: true,
     useHTML: true
@@ -46,17 +46,17 @@ Highcharts.chart('mango-value-imports-container', {
   },
   series: [{
     name: '2018',
-    color: '#FEDEBE',
-    data: [11946648,9658354,12285380,12169512,11145586,10492992,10915482,9429776,26327656,40108700,31292676]
+    color: '#838651',
+    data: [183321,195607,223938,225336,176510,104938,92058,100139,88697,95333,117676]
 
   }, {
     name: '2019',
-    color: '#FFAF42', 
-    data: [12429188,14170300,14474020,14152518,12586484,9644234,9448538,9511116,20695134,35467674,21782626]
+    color: '#635528',
+    data: [195622,185776,257182,236746,188522,149234,126869,120572,109799,138430,145427]
 
   }, {
     name: '2020',
-    color: '#FF8303', 
-    data: [13351626,12311944,14286440,12575290,15056812,9582488,9474540,11193830,29533024,44388668,26592732]
+    color: '#282A15',
+    data: [174182,249328,285096,281355,188781,149169,137046,134204,143299,168515,168092]
   }]
 });

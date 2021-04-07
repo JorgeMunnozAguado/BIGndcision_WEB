@@ -1,9 +1,9 @@
-Highcharts.chart('mango-cuantity-imports-container', {
+Highcharts.chart('mango-cuantity-exports-container', {
   chart: {
     type: 'column'
   },
   title: {
-    text: 'Evolución de la cantidad de importaciones de mango en España.'
+    text: 'Evolución de la cantidad de exportaciones de mango en España.'
   },
   subtitle: {
     text: 'Source: Eurostat.'

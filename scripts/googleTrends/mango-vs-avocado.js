@@ -1,7 +1,7 @@
 Highcharts.chart('mango-vs-avocado-container', {
 
   title: {
-    text: 'Búsquedas de "recetas con aguacate" vs "recetas con mango" en España'
+    text: 'Búsquedas de "recetas con aguacate" vs "recetas con mango"'
   },
 
   subtitle: {
