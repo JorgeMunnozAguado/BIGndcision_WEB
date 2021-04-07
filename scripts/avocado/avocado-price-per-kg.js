@@ -63,7 +63,7 @@ Highcharts.chart('container-avocado-price-per-kg', {
 
   }, {
     name: '2019',
-    color: '#635528',
+    color: '#786835',
     data: [
       274.905777,
       284.684965,

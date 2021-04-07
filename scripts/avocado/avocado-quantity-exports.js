@@ -51,7 +51,7 @@ Highcharts.chart('avocado-cuantity-exports-container', {
 
   }, {
     name: '2019',
-    color: '#635528',
+    color: '#786835',
     data: [195622,185776,257182,236746,188522,149234,126869,120572,109799,138430,145427]
 
   }, {

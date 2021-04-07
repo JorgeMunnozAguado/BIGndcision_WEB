@@ -46,7 +46,7 @@ Highcharts.chart('processedFruit-prices-container', {
   },
   series: [{
     name: '2018',
-    color: '#DAF7A6 ',
+    color: '#7eb55e ',
     data: [0.95, 0.95, 0.95, 0.94375, 0.9, 0.8275, 0.75, 0.7, 0.7, 0.7, 0.7]
 
   }, {
