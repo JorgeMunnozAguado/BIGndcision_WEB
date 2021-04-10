@@ -1,11 +1,4 @@
 
-.parallax {
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 
 html {
 	font-family: "Quicksand", sans-serif;
@@ -26,11 +19,6 @@ h1 {
 	padding: 8px;
 	transition: 0.1s;
     font-weight: 700;
-
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
-	user-select: none;
 }
 
 h2 {
@@ -40,11 +28,6 @@ h2 {
 	width: fit-content;
 	padding: 8px;
 	font-weight: 700;
-
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
-	user-select: none;
 }
 
 h3 {
@@ -53,10 +36,12 @@ h3 {
 	margin-top: 40px;
 	margin-bottom: 5px;
 	font-weight: 700;
+}
 
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
+h1, h2, h3, img {
+	-webkit-user-select: none; 
+	-moz-user-select: none; 
+	-ms-user-select: none; 
 	user-select: none;
 }
 
@@ -140,6 +125,13 @@ p::selection, b::selection, i::selection, b::selection, p2::selection, a::select
 	font-weight: 700!important;
     background: #e49482;
     text-shadow: 0px 1px 3px #5f5f5f;
+}
+
+.parallax {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 
@@ -288,6 +280,11 @@ p::selection, b::selection, i::selection, b::selection, p2::selection, a::select
   height: 500px;
 }
 
+#conclusion-img {
+	width:35%;
+	height: 35%;
+	margin: 5%;
+}
 
 
 /************ RESPONSIVE  ************/
