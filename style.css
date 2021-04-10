@@ -283,6 +283,11 @@ p::selection, b::selection, i::selection, b::selection, p2::selection, a::select
   height: 500px;
 }
 
+#lineChart {
+  width: 100%;
+  height: 500px;
+}
+
 
 
 /************ RESPONSIVE  ************/
