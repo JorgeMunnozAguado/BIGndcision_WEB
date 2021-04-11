@@ -21,9 +21,11 @@ var casa = "icons/lineChart/casa.svg";
 var paseo = "icons/lineChart/paseo.png";
 var restaurante = "icons/lineChart/restaurante.svg";
 var distanciaSocial = "icons/lineChart/distancia.png";
-var nuevasCostumbres = "icons/lineChart/nuevasCostumbres.png";
+var conciertos = "icons/lineChart/conciertos.png";
+var playa = "icons/lineChart/playa.png";
 var cole = "icons/lineChart/termometro.png";
 var hospital = "icons/lineChart/hospital.svg";
+var confinamientoPerim = "icons/lineChart/medico.svg";
 var navidades = "icons/lineChart/navidades.svg";
 var vacuna = "icons/lineChart/vacuna.png";
 
@@ -44,14 +46,14 @@ am4core.ready(function() {
         "category": "",
         "start": "2019-12-01",
         "end": "2020-01-01",
-        "color": colorSet.getIndex(15),
+        "color": colorSet.getIndex(14),
         "icon": newVirus,
         "text": "Nuevo virus"
     }, {
         "category": "",
         "start": "2020-01-01",
         "end": "2020-02-01",
-        "color": colorSet.getIndex(14),
+        "color": colorSet.getIndex(13),
         "icon": covid,
         "text": "Aparece el COVID-19"
     },
@@ -59,7 +61,7 @@ am4core.ready(function() {
         "category": "",
         "start": "2020-02-01",
         "end": "2020-03-01",
-        "color": colorSet.getIndex(13),
+        "color": colorSet.getIndex(12),
         "icon": china,
         "text": "China confina el pais"
     },
@@ -67,7 +69,7 @@ am4core.ready(function() {
         "category": "",
         "start": "2020-03-01",
         "end": "2020-04-01",
-        "color": colorSet.getIndex(12),
+        "color": colorSet.getIndex(11),
         "icon": casa,
         "text": "España confina el pais"
     },
@@ -75,7 +77,7 @@ am4core.ready(function() {
         "category": "",
         "start": "2020-04-01",
         "end": "2020-05-01",
-        "color": colorSet.getIndex(11),
+        "color": colorSet.getIndex(10),
         "icon": paseo,
         "text": "Se pueden realizar actividades al aire libre"
     },
@@ -99,23 +101,23 @@ am4core.ready(function() {
         "category": "",
         "start": "2020-07-01",
         "end": "2020-08-01",
-        "color": colorSet.getIndex(10),
-        "icon": nuevasCostumbres,
-        "text": "Julio"
+        "color": colorSet.getIndex(11),
+        "icon": conciertos,
+        "text": "Ocio con aforo reducido"
     },
     {
         "category": "",
         "start": "2020-08-01",
         "end": "2020-09-01",
-        "color": colorSet.getIndex(10),
-        "icon": nuevasCostumbres,
-        "text": "Agosto"
+        "color": colorSet.getIndex(12),
+        "icon": playa,
+        "text": "Ocio con distanciamiento social y aforo reducido"
     },
     {
         "category": "",
         "start": "2020-09-01",
         "end": "2020-10-01",
-        "color": colorSet.getIndex(8),
+        "color": colorSet.getIndex(12),
         "icon": cole,
         "text": "Vuelta a la nueva normalidad"
     },
@@ -123,7 +125,7 @@ am4core.ready(function() {
         "category": "",
         "start": "2020-10-01",
         "end": "2020-11-01",
-        "color": colorSet.getIndex(7),
+        "color": colorSet.getIndex(10),
         "icon": hospital,
         "text": "Aumento de casos"
     },
@@ -131,15 +133,15 @@ am4core.ready(function() {
         "category": "",
         "start": "2020-11-01",
         "end": "2020-12-01",
-        "color": colorSet.getIndex(7),
-        "icon": cole,
-        "text": "Noviembre"
+        "color": colorSet.getIndex(10),
+        "icon": confinamientoPerim,
+        "text": "Alta incidencia acumulada"
     },
     {
         "category": "",
         "start": "2020-12-01",
         "end": "2021-01-01",
-        "color": colorSet.getIndex(6),
+        "color": colorSet.getIndex(11),
         "icon": navidades,
         "text": "Navidades en casa"
     },
@@ -147,9 +149,17 @@ am4core.ready(function() {
         "category": "",
         "start": "2021-01-01",
         "end": "202-02-01",
-        "color": colorSet.getIndex(5),
+        "color": colorSet.getIndex(11),
         "icon": vacuna,
         "text": "Comienza la vacunación"
+    },
+    {
+        "category": "",
+        "start": "2021-02-01",
+        "end": "202-03-01",
+        "color": colorSet.getIndex(11),
+        "icon": vacuna,
+        "text": "Vacunación"
     }];
 
     chart.fontSize = 10;
@@ -183,7 +193,7 @@ am4core.ready(function() {
     dateAxis.endLocation = 0;
     dateAxis.startLocation = -0.5;
     dateAxis.min = new Date(2019, 4, 1, 23, 55).getTime();
-    dateAxis.max = new Date(2021, 8, 11, 7, 10).getTime();
+    dateAxis.max = new Date(2021, 9, 11, 7, 10).getTime();
 
     var labelTemplate = dateAxis.renderer.labels.template;
     labelTemplate.verticalCenter = "middle";
