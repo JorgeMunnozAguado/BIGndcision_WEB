@@ -1,6 +1,9 @@
 Highcharts.chart('container_covid_imp_eur', {
   chart: {
-    zoomType: 'xy'
+    zoomType: 'xy',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Valor importaciones Vs. Número de casos de COViD-19'

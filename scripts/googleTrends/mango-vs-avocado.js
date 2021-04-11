@@ -1,5 +1,11 @@
 Highcharts.chart('mango-vs-avocado-container', {
 
+  chart: {
+    style: {
+            fontFamily: 'Quicksand'
+        }
+  },
+
   title: {
     text: 'Búsquedas de "recetas con aguacate" vs "recetas con mango"'
   },

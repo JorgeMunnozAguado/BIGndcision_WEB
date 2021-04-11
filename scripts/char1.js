@@ -1,6 +1,9 @@
 Highcharts.chart('container', {
   chart: {
-    type: 'column'
+    type: 'column',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Evolución del consumo.'

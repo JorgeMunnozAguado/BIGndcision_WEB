@@ -1,6 +1,9 @@
 Highcharts.chart('container_covid_exp_vol', {
   chart: {
-    zoomType: 'xy'
+    zoomType: 'xy',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Volumen exportaciones Vs. Número de casos de COViD-19'

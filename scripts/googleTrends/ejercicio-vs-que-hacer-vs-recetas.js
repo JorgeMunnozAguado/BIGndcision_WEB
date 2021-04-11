@@ -1,5 +1,11 @@
 Highcharts.chart('ejercicio-vs-que-hacer-vs-recetas-container', {
 
+  chart: {
+    style: {
+            fontFamily: 'Quicksand'
+        }
+  },
+
   title: {
     text: 'Búsquedas de "ejericio en casa", "recetas" y "que hacer en casa" en España'
   },

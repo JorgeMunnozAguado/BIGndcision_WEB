@@ -1,6 +1,9 @@
 Highcharts.chart('container-ajo-value', {
   chart: {
-    type: 'column'
+    type: 'column',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Precios de ajos comercializados en MercaMadrid y MercaBarna.'

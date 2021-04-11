@@ -3,6 +3,9 @@ Highcharts.chart('container-week-price', {
     chart: {
         scrollablePlotArea: {
             minWidth: 700
+        },
+        style: {
+            fontFamily: 'Quicksand'
         }
     },
 

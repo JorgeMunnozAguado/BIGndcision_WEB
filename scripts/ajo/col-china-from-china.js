@@ -1,6 +1,9 @@
 Highcharts.chart('container-col-china-from-china', {
     chart: {
-      type: 'area'
+      type: 'area',
+      style: {
+            fontFamily: 'Quicksand'
+        }
     },
     title: {
       text: 'Volumen de col china procedente de China.'

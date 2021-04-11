@@ -1,6 +1,9 @@
 Highcharts.chart('container-ajo-quantity', {
   chart: {
-    type: 'area'
+    type: 'area',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Volumen de ajos comercializados en MercaMadrid y MercaBarna.'

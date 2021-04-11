@@ -3,6 +3,9 @@ $(function () {
         chart: {
             renderTo: 'd4-select-quantity-container',
             type: 'column',
+            style: {
+                fontFamily: 'Quicksand'
+            }
         },
 
         title: {

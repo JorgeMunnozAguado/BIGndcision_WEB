@@ -1,6 +1,9 @@
 Highcharts.chart('processedFruit-prices-container', {
   chart: {
-    type: 'column'
+    type: 'column',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Evolución de los precios de las frutas de cuarta gama'

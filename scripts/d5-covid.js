@@ -1,7 +1,10 @@
 Highcharts.chart('d5-covid-container', {
 
   chart: {
-    type: 'area'
+    type: 'area',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
 
   title: {

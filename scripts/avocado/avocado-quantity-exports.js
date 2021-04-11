@@ -1,6 +1,9 @@
 Highcharts.chart('avocado-cuantity-exports-container', {
   chart: {
-    type: 'column'
+    type: 'column',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Evolución de la cantidad de exportaciones de aguacate en España.'

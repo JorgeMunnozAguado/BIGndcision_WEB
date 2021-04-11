@@ -1,6 +1,9 @@
 Highcharts.chart('container-lemon-imports-qv', {
   chart: {
-    zoomType: 'xy'
+    zoomType: 'xy',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Evoluciones de las importaciones de limones'

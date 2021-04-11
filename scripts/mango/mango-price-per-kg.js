@@ -1,6 +1,9 @@
 Highcharts.chart('container-mango-price-per-kg', {
   chart: {
-    type: 'spline'
+    type: 'spline',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Evolución del precio/100 Kg del mango.'

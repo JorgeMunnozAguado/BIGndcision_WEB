@@ -1,6 +1,9 @@
 Highcharts.chart('frozenVegetables-prices-container', {
   chart: {
-    type: 'column'
+    type: 'column',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Evolución de los volúmenes de congelados'

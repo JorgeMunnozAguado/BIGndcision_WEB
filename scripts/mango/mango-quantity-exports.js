@@ -1,6 +1,9 @@
 Highcharts.chart('mango-cuantity-exports-container', {
   chart: {
-    type: 'column'
+    type: 'column',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Evolución de la cantidad de exportaciones de mango en España.'

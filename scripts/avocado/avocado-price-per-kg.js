@@ -1,6 +1,9 @@
 Highcharts.chart('container-avocado-price-per-kg', {
   chart: {
-    type: 'spline'
+    type: 'spline',
+    style: {
+            fontFamily: 'Quicksand'
+        }
   },
   title: {
     text: 'Evolución del precio/100 Kg del aguacate.'

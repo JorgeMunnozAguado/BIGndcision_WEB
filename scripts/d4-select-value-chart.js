@@ -2,7 +2,10 @@ $(function () {
     var chart = new Highcharts.Chart({
         chart: {
             renderTo: 'd4-select-value-container',
-            type: 'column'
+            type: 'column',
+            style: {
+                fontFamily: 'Quicksand'
+            }
         },
 
         title: {

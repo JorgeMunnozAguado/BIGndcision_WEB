@@ -1,5 +1,11 @@
 Highcharts.chart('container-lemon-vs-lemon-cake', {
 
+  chart: {
+    style: {
+            fontFamily: 'Quicksand'
+        }
+  },
+
   title: {
     text: 'Búsquedas de "Limón" y "Bizcocho de limón" en España'
   },

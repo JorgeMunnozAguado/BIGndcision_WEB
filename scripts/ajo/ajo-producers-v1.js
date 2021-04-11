@@ -1,7 +1,10 @@
 Highcharts.chart('container-ajo-producers', {
 
     chart: {
-        type: 'bar'
+        type: 'bar',
+        style: {
+            fontFamily: 'Quicksand'
+        }
     },
 
     title: {
